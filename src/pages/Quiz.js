@@ -106,6 +106,12 @@ const Quiz = () => {
       name: 'Bakteri',
       icon: '🔬',
       color: '#4ECDC4'
+    },
+    {
+      id: 'Proteus',
+      name: 'Febri ganteng',
+      icon: '🔬',
+      color: '#4ECDC6'
     }
   ];
 
