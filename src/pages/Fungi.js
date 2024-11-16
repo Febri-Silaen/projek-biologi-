@@ -8,7 +8,6 @@ const Fungi = () => {
             <h2 className="text-center mb-4">Fungi</h2>
             <div className="row">
                 
-                {/* Card untuk informasi mengenai fungi: Jamur Kuping */}
                 <div className="col-md-6 mb-4">
                     <div className="card h-100 shadow-sm">
                         <img src={zygomta1} className="card-img-top" alt="Zygomta" />
@@ -22,7 +21,6 @@ const Fungi = () => {
                     </div>
                 </div>
 
-                {/* Card untuk fungi: Jamur Tiram */}
                 <div className="col-md-6 mb-4">
                     <div className="card h-100 shadow-sm">
                         <img src={ascomycota} className="card-img-top" alt="Jamur Tiram" />
