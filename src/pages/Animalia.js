@@ -8,16 +8,13 @@ const Animalia = () => {
   const [activeTab, setActiveTab] = useState('overview');
 
   const animalGroups = [
-    
-   
     {
-      id : 'invertebrata',
+      id: 'invertebrata',
       title: 'Invertebrata',
       description: 'Hewan tidak bertulang belakang',
       image: '/images/ikan.jpg',
       groups: ['Porifera', 'Coelenterata', 'Platyhelminthes', 'Nemathelminthes', 'Annelida', 'Mollusca', 'Arthropoda', 'Echinodermata']
     },
- 
     {
       id: 'vertebrata',
       title: 'Vertebrata',
@@ -123,7 +120,6 @@ const Animalia = () => {
         ))}
       </div>
 
-      {/* Main Content */}
       <motion.main
         className="animalia-content"
         initial={{ opacity: 0 }}
@@ -146,7 +142,6 @@ const Animalia = () => {
           </div>
         </section>
 
-        
         {activeTab !== 'overview' && (
           <section className="animal-groups">
             <h3>Kelompok {materialContent[activeTab].title}</h3>
@@ -171,7 +166,6 @@ const Animalia = () => {
           </section>
         )}
 
-      
         <section className="interactive-section">
           <h3>Contoh Interaktif</h3>
           <div className="examples-grid">
@@ -193,79 +187,27 @@ const Animalia = () => {
           </div>
         </section>
 
-        {/* Additional Resources */}
-        <section className="resources-section">
-          <h3>Sumber Belajar Tambahan</h3>
+        <section className="learning-resources">
+          <h2>Sumber Belajar</h2>
           <div className="resources-grid">
-            <motion.a
-              href="https://example.com/link1"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              Link 1
-            </motion.a>
-            <motion.i
-              className="fas fa-video"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              <FaVideo />
-            </motion.i>
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              Video Pembelajaran
-            </motion.span>
-            <motion.a
-              href="https://example.com/link2"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-            >
-              Link 2
-            </motion.a>
-            <motion.i
-              className="fas fa-book"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 1 }}
-            >
-              <FaBook />
-            </motion.i>
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 1.2 }}
-            >
-              Modul Digital
-            </motion.span>
-            <motion.a
-              href="https://example.com/link2"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 1.4 }}
-            >
-              Link 2
-            </motion.a>
-            <motion.i
-              className="fas fa-tasks"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 1.6 }}
-            >
-              <FaTasks />
-            </motion.i>
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 1.8 }}
-            >
-              Latihan Soal
-            </motion.span>
+            <ResourceCard
+              icon={<FaVideo />}
+              title="Video Pembelajaran"
+              description="Pelajari materi melalui video interaktif"
+              link="https://youtu.be/ZysZy1OfGII?si=UT6dks4_Y_VPPzxF"
+            />
+            <ResourceCard
+              icon={<FaBook />}
+              title="Modul Digital"
+              description="Akses modul pembelajaran lengkap"
+              link="https://repositori.kemdikbud.go.id/22023/1/X_Biologi_KD-3.10_Final.pdf"
+            />
+            <ResourceCard
+              icon={<FaTasks />}
+              title="Latihan Soal"
+              description="Uji pemahaman dengan latihan soal"
+              link="./fungi"
+            />
           </div>
         </section>
       </motion.main>
@@ -273,6 +215,17 @@ const Animalia = () => {
   );
 };
 
+const ResourceCard = ({ icon, title, description, link }) => (
+  <motion.div
+    className="resource-card"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+  >
+    <div className="resource-icon">{icon}</div>
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <a href={link}>Pelajari</a>
+  </motion.div>
+);
+
 export default Animalia;
-
-
