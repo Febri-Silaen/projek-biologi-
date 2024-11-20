@@ -53,9 +53,14 @@
     position: relative;
     display: inline-block;
     z-index: 1;
-    animation: glowingText 2s infinite alternate;
 }
 
+.struktur-fungi {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+  
 @keyframes slideUpFadeIn {
     0% {
         transform: translateY(20px);
