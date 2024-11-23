@@ -86,7 +86,6 @@ const Fungi = () => {
 
                 <div className="col-md-6 mb-4">
                     <div className="card-container">
-                        <Link to="/deuteromycota" className="card-img-top" alt="deuteromycota" >
                         <div className="card h-100 shadow-sm fungi-card">
                             <img src={deuteromycota} className="card-img-top" alt="Deuteromycota" />
                             <div className="card-body">
@@ -96,7 +95,6 @@ const Fungi = () => {
                                 </p>
                             </div>
                         </div>
-                        </Link>
                     </div>
                 </div>
 

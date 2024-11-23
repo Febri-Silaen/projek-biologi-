@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Login from './components/Login';
 import Home from './pages/Home';
-import Biology from './pages/Biology';
 import RuangLingkup from './pages/RuangLingkup';
 import Keanekaragaman from './pages/Keanekaragaman';
 import Virus from './pages/Virus';
@@ -13,7 +13,7 @@ import Plantae from './pages/Plantae';
 import Animalia from './pages/Animalia';
 import Quiz from './pages/Quiz';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Zygomycota from './pages/klasifikasi/Zygomycota';
+import Zygomycota from './pages/Zygomycota';
 import Ascomycota from './pages/klasifikasi/Ascomycota';
 import Basidiomycota from './pages/klasifikasi/Basidiomycota';
 import Deuteromycota from './pages/klasifikasi/Deuteromycota'; 
@@ -26,7 +26,6 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/biology" element={<Biology />} />
             <Route path="/ruang-lingkup" element={<RuangLingkup />} />
             <Route path="/keanekaragaman" element={<Keanekaragaman />} />
             <Route path="/virus" element={<Virus />} />
@@ -35,6 +34,7 @@ function App() {
             <Route path="/plantae" element={<Plantae />} />
             <Route path="/Animalia" element={<Animalia />} />
             <Route path="/quiz" element={<Quiz />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/zygomycota" element={<Zygomycota />}/>
             <Route path="/ascomycota" element={<Ascomycota/>}/>
             <Route path="/basidiomycota" element={<Basidiomycota/>}/>
