@@ -1,31 +1,44 @@
 import React from 'react';
-import { Container, Row, Col, Card, Accordion } from 'react-bootstrap';
+import { Container, Row, Col, Card, Image, Accordion } from 'react-bootstrap';
 
 const Protista = () => {
   return (
     <Container className="my-5">
       <h1 className="text-center mb-4">Kingdom Protista</h1>
-      <p>
-        Protista adalah kingdom yang terdiri dari satu sel atau banyak sel dan memiliki membran inti (organisme eukariot). 
-        Protista dapat dikelompokkan menjadi tiga bagian yaitu menyerupai hewan (protozoa), menyerupai tumbuhan (Ganggang), 
-        dan menyerupai jamur. Sebagian besar Protista hidup di air karena tidak memiliki pelindung untuk menjaga tubuhnya 
-        dari hawa kering. Indonesia sebagai negara megabiodiversitas memiliki kekayaan mikroorganisme, termasuk Protista, 
-        yang hingga kini masih belum dimanfaatkan secara maksimal.
-      </p>
 
-      <Row className="gy-4">
-        {/* Ciri-Ciri Protista */}
+      <Row className="align-items-center gy-4">
         <Col md={6}>
-          <Card>
-            <Card.Header className="bg-primary text-white">Ciri-Ciri Kingdom Protista</Card.Header>
+          <div>
+            <h2>Apa itu Protista?</h2>
+            <p>
+              Protista adalah kingdom yang terdiri dari satu sel atau banyak sel dan memiliki membran inti (organisme eukariot). 
+              Protista dapat dikelompokkan menjadi tiga bagian yaitu menyerupai hewan (protozoa), menyerupai tumbuhan (Ganggang), 
+              dan menyerupai jamur. Sebagian besar Protista hidup di air karena tidak memiliki pelindung untuk menjaga tubuhnya 
+              dari hawa kering. Indonesia sebagai negara megabiodiversitas memiliki kekayaan mikroorganisme, termasuk Protista, 
+              yang hingga kini masih belum dimanfaatkan secara maksimal.
+            </p>
+          </div>
+        </Col>
+        <Col md={6}>
+          <Image src="/images/plantae.jpg" 
+            alt="Protista Illustration" 
+            fluid 
+            rounded 
+            className="shadow-sm"
+          />
+        </Col>
+      </Row>
+
+      <Row className="mt-5 align-items-center gy-4">
+        <Col md={6}>
+          <Card className="shadow">
+            <Card.Header className="bg-primary text-white">Ciri-Ciri Protista</Card.Header>
             <Card.Body>
               <ul>
-                <li>Umumnya uniseluler, tetapi ada juga yang multiseluler sederhana.</li>
-                <li>Tipe sel eukariotik dengan membran inti.</li>
-                <li>Hidup bebas atau simbiosis, aerob atau anaerob.</li>
-                <li>Habitat di tempat lembab, air tawar, atau laut.</li>
-                <li>Bersifat heterotrof atau fotoautotrof.</li>
-                <li>Bersifat motil dengan alat gerak seperti flagel, silia, atau pseudopodia.</li>
+                <li key="1">Uniseluler atau multiseluler sederhana.</li>
+                <li key="2">Memiliki membran inti (eukariotik).</li>
+                <li key="3">Hidup di lingkungan lembap atau perairan.</li>
+                <li key="4">Bergerak dengan flagel, silia, atau pseudopodia.</li>
               </ul>
             </Card.Body>
           </Card>
@@ -85,7 +98,6 @@ const Protista = () => {
         </Col>
       </Row>
 
-      {/* Manfaat dan Dampak Protista */}
       <Row className="gy-4 mt-4">
         <Col md={6}>
           <Card>
@@ -101,23 +113,9 @@ const Protista = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={6}>
-          <Card>
-            <Card.Header className="bg-danger text-white">Dampak Buruk Protista</Card.Header>
-            <Card.Body>
-              <ul>
-                <li>Entamoeba histolytica menyebabkan disentri pada manusia.</li>
-                <li>Trypanosoma gambiense menyebabkan penyakit tidur (trypanosomiasis).</li>
-                <li>Leishmania donovani menyebabkan penyakit kala azar.</li>
-                <li>Entamoeba gingivalis memperparah radang gusi.</li>
-                <li>Trypanosoma evansi menyebabkan penyakit surrah pada hewan ternak.</li>
-              </ul>
-            </Card.Body>
-          </Card>
-        </Col>
       </Row>
     </Container>
   );
 };
 
-export default Protista;
+export default Protista;
