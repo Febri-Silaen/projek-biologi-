@@ -1,9 +1,9 @@
 import React from 'react';
-import '../../styles/Klasifikasi.css';
+import '../../styles/Fungi.css';
 
 const Basidiomycota = () => {
   return (
-    <div className="basidiomycota-materi">
+    <div className="zygomycota-materi">
       <h1>Basidiomycota </h1>
       
       <section className="pengertian">
@@ -48,7 +48,7 @@ const Basidiomycota = () => {
       </section>
 
       <section className="peran">
-        <h2>Peran Basidiomycota dalam Ekosistem</h2>
+        <h2>Peran dalam Ekosistem</h2>
         <p>
         Jamur Basidiomycota memiliki peran penting dalam ekosistem. Mereka berperan sebagai dekomposer, memecah bahan organik kompleks menjadi komponen yang lebih sederhana dan menghasilkan nutrisi yang dapat digunakan oleh organisme lain.
         infeksi bakteri adalah contoh ascomycota

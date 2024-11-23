@@ -1,9 +1,9 @@
 import React from 'react';
-import '../../styles/Klasifikasi.css';
+import '../../styles/Fungi.css';
 
 const Ascomycota = () => {
   return (
-    <div className="ascomycota-materi">
+    <div className="zygomycota-materi">
       <h1>Ascomycota</h1>
       
       <section className="pengertian">
@@ -49,7 +49,7 @@ const Ascomycota = () => {
       </section>
 
       <section className="peran">
-        <h2>Peran Ascomycota dalam Ekosistem</h2>
+        <h2>Peran dalam Ekosistem</h2>
         <p>
         Ascomycota sangat bermanfaat bagi manusia sebagai sumber senyawa penting 
         medis, seperti antibiotik, fermentasi roti, minuman beralkohol, dan keju. 
