@@ -91,27 +91,43 @@ const Quiz = () => {
         explanation: "Basil adalah istilah untuk bakteri berbentuk batang."
       },
      
+    ],
+    plantae: [
+      {
+        question: "Bakteri yang berbentuk batang disebut...",
+        options: [
+          "Kokus",
+          "Basil",
+          "Spiral",
+          "Vibrio"
+        ],
+        correctAnswer: "Basil",
+        explanation: "Basil adalah istilah untuk bakteri berbentuk batang."
+      },
+     
+     
     ]
+
   };
 
   const topics = [
     {
       id: 'virus',
       name: 'Virus',
-      icon: '🦠',
+      icon: '👹',
       color: '#FF6B6B'
     },
     {
       id: 'bakteri',
       name: 'Bakteri',
-      icon: '🔬',
+      icon: '🥶',
       color: '#4ECDC4'
     },
     {
-      id: 'Proteus',
-      name: 'Febri ganteng',
-      icon: '🔬',
-      color: '#4ECDC6'
+      id: 'plantae',
+      name: 'plantae',
+      icon: '🌱',
+      color: 'blue'
     }
   ];
 
