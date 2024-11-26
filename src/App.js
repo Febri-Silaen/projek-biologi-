@@ -17,6 +17,12 @@ import Zygomycota from './pages/Zygomycota';
 import Ascomycota from './pages/klasifikasi/Ascomycota';
 import Basidiomycota from './pages/klasifikasi/Basidiomycota';
 import Deuteromycota from './pages/klasifikasi/Deuteromycota'; 
+import Protozoa from './pages/klasifikasi/Protozoa';
+import ProtistaJamur from './pages/klasifikasi/ProtistaJamur';
+import Algae from './pages/klasifikasi/Algae';
+import Pteridophyta from './pages/klasifikasi/Pteridophyta';
+import Bryophyta from "./pages/klasifikasi//Bryophyta";
+import Spermatophyta from "./pages/klasifikasi/Spermatophyta";
 
 function App() {
   return (
@@ -39,6 +45,12 @@ function App() {
             <Route path="/ascomycota" element={<Ascomycota/>}/>
             <Route path="/basidiomycota" element={<Basidiomycota/>}/>
             <Route path="/deuteromycota" element={<Deuteromycota/>} />
+            <Route path="/protozoa" element={<Protozoa />} />
+            <Route path="/protista-jamur" element={<ProtistaJamur />} />
+            <Route path="/algae" element={<Algae />} />
+            <Route path="/pteridophyta" element={<Pteridophyta />} />
+            <Route path="/bryophyta" element={<Bryophyta />} />
+            <Route path="/spermatophyta" element={<Spermatophyta />} />
           </Routes>
         </main>
         <Footer />

@@ -1,0 +1,61 @@
+/* === Styling for Pteridophyta === */
+.pteridophyta-section {
+    padding: 40px 20px;
+    background-color: #f5fff7;
+    border-radius: 10px;
+  }
+  
+  .pteridophyta-section h1 {
+    font-size: 2.5rem;
+    color: #2e7d32;
+    font-weight: bold;
+  }
+  
+  .description h2 {
+    font-size: 1.8rem;
+    color: #388e3c;
+  }
+  
+  .description p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .image-card .img-fluid {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .features ul {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features ul li {
+    font-size: 1.1rem;
+    color: #333;
+    background: #e8f5e9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #66bb6a;
+    border-radius: 5px;
+  }
+  
+  .benefits .benefit-card {
+    border: none;
+    background: #f1f8e9;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .benefits .benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefits .benefit-card .text-success {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
