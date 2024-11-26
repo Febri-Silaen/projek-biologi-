@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Login from './components/Login';
 import Home from './pages/Home';
-import RuangLingkup from './pages/RuangLingkup';
+
 import Keanekaragaman from './pages/Keanekaragaman';
 import Virus from './pages/Virus';
 import Protista from './pages/Protista';
@@ -26,7 +26,7 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/ruang-lingkup" element={<RuangLingkup />} />
+           
             <Route path="/keanekaragaman" element={<Keanekaragaman />} />
             <Route path="/virus" element={<Virus />} />
             <Route path="/protista" element={<Protista />} />

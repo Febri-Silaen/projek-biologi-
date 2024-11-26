@@ -104,8 +104,50 @@ const Quiz = () => {
         correctAnswer: "Basil",
         explanation: "Basil adalah istilah untuk bakteri berbentuk batang."
       },
-     
-     
+    ],
+
+   Animalia: [
+      {
+        question: "Karakteristik utama Kingdom Animalia yang paling membedakan dari kingdom lainnya adalah...",
+        options: [
+          "Multiseluler",
+          "Eukariotik",
+          "Kemampuan bergerak aktif",
+          "Heterotrof"
+        ],
+        correctAnswer: "Kemampuan bergerak aktif",
+        explanation: "Kingdom Animalia unik karena kemampuan bergeraknya yang aktif, setidaknya pada satu tahap kehidupan. Ini membedakannya dari kingdom lain seperti tumbuhan yang bersifat menetap."
+      },
+      {
+        question: "KPada periode Ledakan Kambrium, terjadi peristiwa penting dalam evolusi hewan pada sekitar...",
+
+        options: [
+          "600 juta tahun lalu",
+          "542 juta tahun lalu",
+          "500 juta tahun lalu",
+          "375 juta tahun lalu"
+        ],
+        correctAnswer: "542 juta tahun lalu",
+        explanation: "Ledakan Kambrium adalah periode munculnya berbagai bentuk kehidupan kompleks secara masif dalam sejarah evolusi hewan, ditandai dengan keragaman spesies yang berkembang pesat."
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ]
 
   };
@@ -128,6 +170,12 @@ const Quiz = () => {
       name: 'plantae',
       icon: '🌱',
       color: 'blue'
+    },
+    {
+      id: 'Animalia',
+      name: 'Animalia',
+      icon: '🐻',
+      color: 'green'
     }
   ];
 

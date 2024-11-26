@@ -7,13 +7,6 @@ const Home = () => {
 
   const materials = [
     {
-      title: 'Ruang Lingkup Biologi',
-      description: 'Pelajari dasar-dasar dan ruang lingkup ilmu biologi',
-      imageUrl: '/images/keanekaragaman.jpg',
-      link: './ruang-lingkup',
-      color: '#FF6B6B' 
-    },
-    {
       title: 'Keanekaragaman Hayati',
       description: 'Eksplorasi keanekaragaman makhluk hidup di Indonesia',
       imageUrl: '/images/hewan.jpg',
