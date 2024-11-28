@@ -1,9 +1,9 @@
 import React from 'react';
-import '../../styles/Fungi.css';
+import '../../styles/Klasifikasi.css';
 
 const Ascomycota = () => {
   return (
-    <div className="zygomycota-materi">
+    <div className="ascomycota-materi">
       <h1>Ascomycota</h1>
       
       <section className="pengertian">

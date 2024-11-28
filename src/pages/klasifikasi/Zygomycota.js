@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Fungi.css';
+import '../styles/Klasifikasi.css';
 
 const Zygomycota = () => {
   return (
