@@ -13,7 +13,7 @@ import Plantae from './pages/Plantae';
 import Animalia from './pages/Animalia';
 import Quiz from './pages/Quiz';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Zygomycota from './pages/Zygomycota';
+import Zygomycota from './pages/klasifikasi/Zygomycota';
 import Ascomycota from './pages/klasifikasi/Ascomycota';
 import Basidiomycota from './pages/klasifikasi/Basidiomycota';
 import Deuteromycota from './pages/klasifikasi/Deuteromycota'; 
