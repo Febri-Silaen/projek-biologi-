@@ -3,6 +3,7 @@ import '../../styles/strukturv.css';
 
 function StrukturV() {
     return (
+        <div className="">
         <div className="struktur-container">
             <h5>
                 Virus adalah mikroorganisme yang sangat kecil dan tidak dapat dilihat dengan mata telanjang. 
@@ -44,6 +45,7 @@ function StrukturV() {
             <footer>
                 <p>Untuk informasi lebih lanjut, kunjungi situs web kesehatan terkemuka.</p>
             </footer>
+        </div>
         </div>
     );
 }
