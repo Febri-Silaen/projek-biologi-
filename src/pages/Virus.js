@@ -7,7 +7,7 @@ function Virus() {
     <div className="card-wrapper">
       
       <div className="hero-section2">
-        <div className="container2">
+        <div className="container">
           <h1 className="display-4">Virus</h1>
           <p className="judul">Memahami Defenisi dan jenis jenis virus</p>
         </div>

@@ -7,7 +7,7 @@ function Animalia() {
   return (
     <div className="animalia-wrapper">
 
-      <div className="hero-section">
+      <div className="hero-section3">
         <div className="hero-content">
           <h1 className="hero-title">Kingdom Animalia</h1>
           <p className="hero-subtitle">Menjelajahi Keragaman Dunia Hewan</p>

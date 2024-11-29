@@ -45,7 +45,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <div className="hero-section">
+      <div className="hero-section4">
         <div className="hero-content">
           <h1 className="hero-title">"SIBISUK MARBIOLOGI"</h1>
           <p className="hero-subtitle">Platform Pembelajaran Biologi Kelas 10</p>

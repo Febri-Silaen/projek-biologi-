@@ -6,11 +6,11 @@
   overflow-x: hidden;
 }
 
-.hero-section {
+.hero-section3 {
   position: relative;
   height: 70vh;
   min-height: 500px;
-
+  background-image: url('../../public/images/animalia.background.jpg');
   background-size: cover;
   background-position: center;
   display: flex;

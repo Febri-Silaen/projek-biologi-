@@ -13,7 +13,7 @@
 }
 
 
-.hero-section {
+.hero-section4 {
   display: flex;
   align-items: center;
   min-height: 80vh;
@@ -28,6 +28,7 @@
 .hero-content {
   flex: 1;
   padding: 0 40px;
+  text-align: center;
 }
 
 .hero-title {
