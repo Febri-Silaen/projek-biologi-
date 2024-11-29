@@ -1,0 +1,28 @@
+/* Mengatur padding untuk seluruh halaman */
+.replikasi-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Menata judul */
+.replikasi-title {
+    text-align: center;
+    color: #4CAF50;
+}
+
+/* Menata paragraf */
+.replikasi-paragraph {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Menata gambar */
+.replikasi-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.replikasi-image {
+    border-radius: 10px;
+    margin-top: 20px;
+}

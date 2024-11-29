@@ -7,6 +7,9 @@ import Home from './pages/Home';
 
 import Keanekaragaman from './pages/Keanekaragaman';
 import Virus from './pages/Virus';
+import StrukturV from "./pages/klasifikasi/StrukturV";
+import BentukV from "./pages/klasifikasi/BentukV";
+import ReplikasiV from "./pages/klasifikasi/ReplikasiV";
 import Protista from './pages/Protista';
 import Fungi from './pages/Fungi';
 import Plantae from './pages/Plantae';
@@ -35,6 +38,9 @@ function App() {
            
             <Route path="/keanekaragaman" element={<Keanekaragaman />} />
             <Route path="/virus" element={<Virus />} />
+            <Route path="/strukturv" element={<StrukturV />} />
+            <Route path="/bentukv" element={<BentukV />} />
+            <Route path="/replikasiv" element={<ReplikasiV />} />
             <Route path="/protista" element={<Protista />} />
             <Route path="/fungi" element={<Fungi />} />
             <Route path="/plantae" element={<Plantae />} />
