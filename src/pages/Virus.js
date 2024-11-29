@@ -31,41 +31,32 @@ function Virus() {
         <p><strong>d. Wendell Meredith Stanley.</strong> Pada tahun 1935, Wendell Meredith Stanley, seorang ilmuwan Amerika berhasil mengkristalkan partikel penyebab penyakit pada tanaman tembakau. Penyakit ini kemudian dikenal dengan nama Tobacco Mosaic Virus (TMV).</p>
       </div>  
 
-      <h2>Yuk ketahui lebih lanjut !</h2>
-
       <div className="card-container">
         <img src="./images/Virus1.jpeg" alt="Virus" className="card-img" />
         <h1 className="card-title">Sejarah Virus</h1>
-        <p className="card-description">Temukan asal-usul dan perkembangan pengetahuan tentang virus.</p>
-        <Link to="/virus-details" className="card-btn">Learn More</Link>
+        <p className="card-description">Ketahui Struktur dari pengetahuan tentang virus.</p>
+        <Link to="/StrukturV" className="card-btn">Learn More</Link>
       </div>
 
       <div className="card-container">
         <img src="./images/Virus2.jpg" alt="Virus" className="card-img" />
-        <h1 className="card-title">Sejarah Virus</h1>
-        <p className="card-description">Temukan asal-usul dan perkembangan pengetahuan tentang virus.</p>
-        <Link to="/virus-details" className="card-btn">Learn More</Link>
+        <h1 className="card-title">Bentuk Virus</h1>
+        <p className="card-description">Ketahui bentuk dari pengetahuan tentang virus.</p>
+        <Link to="/BentukV" className="card-btn">Learn More</Link>
       </div>
 
       <div className="card-container">
         <img src="./images/Virus3.jpg" alt="Virus" className="card-img" />
-        <h1 className="card-title">Sejarah Virus</h1>
-        <p className="card-description">Temukan asal-usul dan perkembangan pengetahuan tentang virus.</p>
-        <Link to="/virus-details" className="card-btn">Learn More</Link>
+        <h1 className="card-title">Replikasi Virus</h1>
+        <p className="card-description">Ketahui Replikasi dari pengetahuan tentang virus.</p>
+        <Link to="/ReplikasiV" className="card-btn">Learn More</Link>
       </div>
 
       <div className="card-container">
         <img src="./images/Virus4.jpeg" alt="Virus" className="card-img" />
-        <h1 className="card-title">Sejarah Virus</h1>
-        <p className="card-description">Temukan asal-usul dan perkembangan pengetahuan tentang virus.</p>
-        <Link to="/virus-details" className="card-btn">Learn More</Link>
-      </div>
-
-      <div className="card-container">
-        <img src="./images/Virus5.jpg" alt="Virus" className="card-img" />
-        <h1 className="card-title">Sejarah Virus</h1>
-        <p className="card-description">Temukan asal-usul dan perkembangan pengetahuan tentang virus.</p>
-        <Link to="/virus-details" className="card-btn">Learn More</Link>
+        <h1 className="card-title">Penyakit & Pencegahan Virus</h1>
+        <p className="card-description">Ketahui Penyakit serta Pencegahan dari Virus.</p>
+        <Link to="/PenyakitV" className="card-btn">Learn More</Link>
       </div>
 
     </div>
