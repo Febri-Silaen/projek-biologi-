@@ -1,24 +1,29 @@
-/* Text Section Styling */
-.text-section {
-    text-align: center;
-    padding: 50px 350px;
-    background-color: #f7faff; 
-    border-radius: 15px;
-    margin-bottom: 3px; /* Jarak dengan kartu */
-    box-shadow: 0 4px 6px rgba(0, 0, 0.1, 0.1); /* Bayangan lembut */
-    background-image: url('../../public/images/Virus0.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .text-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    animation: slideDown 1.5s ease-out;
-    color: black;
-  }
+
+.hero-section2 {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  width: 100%;
+  padding: 60px 0;
+  background-image: url('../../public/images/virus.background.jpg');
+  border-radius: 20px;
+  margin-bottom: 60px;
   
-  /* Efek Cahaya */
+
+}
+.judul{
+  padding-left:50px;
+  font-size: 20px;
+  color: white;
+}
+.display-4 {
+  padding-left:90px;
+  font-size: 50px;
+  color: white;
+}
+
+
+  
   .card-wrapper::before {
     content: '';
     position: absolute;

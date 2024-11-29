@@ -8,7 +8,7 @@ const Keanekaragaman = () => {
   return (
     <div className="keanekaragaman">
   
-      <div className="hero-section">
+      <div className="hero-section1">
         <div className="container">
           <h1 className="display-4 text-white">Keanekaragaman Hayati</h1>
           <p className="lead text-white">Memahami Kompleksitas Kehidupan di Bumi</p>

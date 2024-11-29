@@ -5,8 +5,12 @@ import './Virus.css';
 function Virus() {
   return (
     <div className="card-wrapper">
-      <div className="text-section">
-        <h1 className="text-title">Selamat Datang di Dunia Virus</h1>
+      
+      <div className="hero-section2">
+        <div className="container2">
+          <h1 className="display-4">Virus</h1>
+          <p className="judul">Memahami Defenisi dan jenis jenis virus</p>
+        </div>
       </div>
 
       <div className="des">

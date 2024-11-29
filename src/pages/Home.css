@@ -18,9 +18,11 @@
   align-items: center;
   min-height: 80vh;
   padding: 60px 0;
-  background-color: #A2D2DF;
+  background-image: url('../../public/images/biologi.background.jpg');
   border-radius: 20px;
   margin-bottom: 60px;
+  
+
 }
 
 .hero-content {
@@ -40,6 +42,7 @@
   font-size: 2rem;
   color: var(--secondary-color);
   margin-bottom: 20px;
+  color: white;
 }
 
 .hero-description {
@@ -47,12 +50,13 @@
   color: var(--text-color);
   margin-bottom: 40px;
   line-height: 1.6;
+  color: white;
 }
 
 .cta-button {
   padding: 15px 40px;
   font-size: 1.2rem;
-  background-color: var(--primary-color);
+  background-color: aqua;
   color: white;
   border: none;
   border-radius: 30px;

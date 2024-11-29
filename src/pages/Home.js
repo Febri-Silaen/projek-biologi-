@@ -47,7 +47,7 @@ const Home = () => {
     <div className="home-container">
       <div className="hero-section">
         <div className="hero-content">
-          <h1 className="hero-title">SIBISUK MARBIOLOGI</h1>
+          <h1 className="hero-title">"SIBISUK MARBIOLOGI"</h1>
           <p className="hero-subtitle">Platform Pembelajaran Biologi Kelas 10</p>
           <p className="hero-description">
             Belajar biologi jadi lebih menyenangkan dan interaktif
@@ -77,7 +77,7 @@ const Home = () => {
           <div className="feature-card">
             <span className="feature-icon">🎮</span>
             <h3>Latihan Seru</h3>
-            <p>Kuis dan games untuk menguji pemahaman</p>
+            <p>Kuis  untuk menguji pemahaman</p>
           </div>
         </div>
       </div>
