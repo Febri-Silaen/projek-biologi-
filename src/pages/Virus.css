@@ -1,218 +1,221 @@
-.virus-container {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 1s ease-out;
-}
-
 /* Text Section Styling */
 .text-section {
-  text-align: center;
-  padding: 50px 350px;
-  background-color: #f7faff; 
-  border-radius: 15px;
-  margin-bottom: 3px; /* Jarak dengan kartu */
-  box-shadow: 0 4px 6px rgba(0, 0, 0.1, 0.1); /* Bayangan lembut */
-  background-image: url('../../public/images/Virus0.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.text-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-  animation: slideDown 1s ease-out;
-  color: black;
-}
-
-/* Efek Cahaya */
-.card-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120%;
-  height: 120%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, transparent 70%);
-  z-index: -1;
-  animation: pulsate 3s infinite;
-}
-
-.text-description {
-  font-size: 20px;
-  line-height: 1.2;
-  color: black;
-  animation: fadeIn 2s ease-in;
-}
-
-/* Wrapper styling */
-.card-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px; /* Jarak antar card */
-  padding: 10px;
-  background-color: #f9f9f9; /* Warna latar */
-}
-
-/* Card styling */
-.card-container {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 250px; /* Ukuran konsisten untuk semua card */
-  height: 350px; /* Tinggi konsisten untuk semua card */
-  text-align: center;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Agar konten merata di dalam card */
-  transition: transform 0.3s ease;
-}
-
-.card-container:hover {
-  transform: scale(1.05); /* Efek hover */
-}
-
-/* Card image */
-.card-img {
-  width: 100%;
-  height: 170px; /* Tinggi gambar tetap */
-  object-fit: cover; /* Menyesuaikan gambar agar tidak terpotong */
-  border-radius: 10px;
-}
-
-.card-container h1{
-  color: black;
-}
-
-/* Title styling */
-.card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-/* Description styling */
-.card-description {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 15px;
-  flex-grow: 1; /* Agar description memenuhi ruang kosong */
-}
-
-/* Button styling */
-.card-btn {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease;
-}
-
-.card-btn:hover {
-  background-color: #0056b3;
-}
-
-.isi1{
-  margin-top: 10px;
-}
-
-h6 {
-  animation: slideDown 1s ease-out;
-  font-size: 18px;
-}
-
-h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: #fff;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  animation: fadeIn 1.5s ease-out;
-}
-
-h2.isi1 {
-  font-size: 2.5rem;
-  text-align: center;
-  color: black;
-  animation: fadeIn 2s ease-in-out;
-  margin-top: 0px;
-}
-.del1 p{
-  margin: 20px 0;
-  padding: 15px;
-  background: #fff;
-  border-left: 6px solid #007BFF;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
-  animation: slideIn 1.5s ease-in-out;
-}
-strong {
-  color: #4A628A;
-}
-
-/* Animasi */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
+    text-align: center;
+    padding: 50px 350px;
+    background-color: #f7faff; 
+    border-radius: 15px;
+    margin-bottom: 3px; /* Jarak dengan kartu */
+    box-shadow: 0 4px 6px rgba(0, 0, 0.1, 0.1); /* Bayangan lembut */
+    background-image: url('../../public/images/Virus0.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .text-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    animation: slideDown 1.5s ease-out;
+    color: black;
   }
-}
-
-
-@keyframes fadeBg {
-  from {
-    opacity: 0.2;
+  
+  /* Efek Cahaya */
+  .card-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, transparent 70%);
+    z-index: -1;
+    animation: pulsate 3s infinite;
   }
-  to {
-    opacity: 0.4;
+  
+  .text-description {
+    font-size: 20px;
+    line-height: 1.6;
+    color: black;
+    animation: fadeIn 2s ease-in;
   }
-}
-
-
-    /* Animasi */
-    @keyframes fadeInScale {
-      from {
-        opacity: 0;
-        transform: scale(0.8);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
+  
+  /* Wrapper styling */
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px; /* Jarak antar card */
+    padding: 10px;
+    background-color: #f9f9f9; /* Warna latar */
+  }
+  
+  /* Card styling */
+  .card-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Ukuran konsisten untuk semua card */
+    height: 350px; /* Tinggi konsisten untuk semua card */
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Agar konten merata di dalam card */
+    transition: transform 0.3s ease;
+  }
+  
+  .card-container:hover {
+    transform: scale(1.05); /* Efek hover */
+  }
+  
+  /* Card image */
+  .card-img {
+    width: 100%;
+    height: 170px; /* Tinggi gambar tetap */
+    object-fit: cover; /* Menyesuaikan gambar agar tidak terpotong */
+    border-radius: 10px;
+  }
+  
+  /* Title styling */
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* Description styling */
+  .card-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Agar description memenuhi ruang kosong */
+  }
+  
+  /* Button styling */
+  .card-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .isi1{
+    margin-top: 20px;
+  }
+  
+  h6 {
+    animation: slideDown 1.5s ease-out;
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  h2.isi1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: black;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 0px;
+  }
+  .del1 p{
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border-left: 6px solid #007BFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 1.5s ease-in-out;
+  }
+  strong {
+    color: #4A628A;
+  }
+  
+  /* Animasi */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
     }
-
-    @keyframes slideDown {
-      from {
-        transform: translateY(-20px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
     }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeBg {
+    from {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 0.4;
+    }
+  }
+  
+  
+      /* Animasi */
+      @keyframes fadeInScale {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+  
+      @keyframes slideDown {
+        from {
+          transform: translateY(-20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+  
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+  
+      @keyframes pulsate {
+        0%, 100% {
+          transform: translateX(-50%) scale(1);
+        }
+        50% {
+          transform: translateX(-50%) scale(1.1);
+}
+ }
+  

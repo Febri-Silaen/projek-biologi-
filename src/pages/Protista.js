@@ -1,9 +1,7 @@
 import React from 'react';
-import { Container, Row, Col, Card, Image } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import './Protista.css';
+import { Container, Row, Col, Card, Image, Accordion } from 'react-bootstrap';
 
-const KingdomProtista = () => {
+const Protista = () => {
   return (
     <Container className="my-5">
       <h1 className="text-center mb-4">Kingdom Protista</h1>
@@ -22,113 +20,102 @@ const KingdomProtista = () => {
           </div>
         </Col>
         <Col md={6}>
-          <Image
-            src="/images/Protista.jpg" 
-            alt="Protista Illustration"
-            fluid
-            rounded
+          <Image src="/images/plantae.jpg" 
+            alt="Protista Illustration" 
+            fluid 
+            rounded 
             className="shadow-sm"
           />
         </Col>
       </Row>
 
-      <h1 className="text-center mb-4">Klasifikasi Kingdom Protista</h1>
-      <Row className="gy-4">
-        <Col md={4}>
-          <Card as={Link} to="/protozoa" className="shadow border-0 text-decoration-none">
-            <Card.Img
-              variant="top"
-              src="https://via.placeholder.com/150"
-              alt="Protista Mirip Hewan"
-              className="p-3"
-            />
-            <Card.Body className="text-center">
-              <Card.Title className="text-success fw-bold">Protista Mirip Hewan (Protozoa)</Card.Title>
-              <Card.Text>
-                Protista uniseluler yang menyerupai hewan. Mereka heterotrof dan dapat bergerak 
-                menggunakan pseudopodia, silia, atau flagel.
-              </Card.Text>
+      <Row className="mt-5 align-items-center gy-4">
+        <Col md={6}>
+          <Card className="shadow">
+            <Card.Header className="bg-primary text-white">Ciri-Ciri Protista</Card.Header>
+            <Card.Body>
+              <ul>
+                <li key="1">Uniseluler atau multiseluler sederhana.</li>
+                <li key="2">Memiliki membran inti (eukariotik).</li>
+                <li key="3">Hidup di lingkungan lembap atau perairan.</li>
+                <li key="4">Bergerak dengan flagel, silia, atau pseudopodia.</li>
+              </ul>
             </Card.Body>
-            <Card.Footer className="bg-light text-center text-muted">
-              <small>Jenis: Rhizopoda, Ciliata, Flagellata, Sporozoa</small>
-            </Card.Footer>
           </Card>
         </Col>
-        <Col md={4}>
-          <Card as={Link} to="/protista-jamur" className="shadow border-0 text-decoration-none">
-            <Card.Img
-              variant="top"
-              src="https://via.placeholder.com/150"
-              alt="Protista Mirip Jamur"
-              className="p-3"
-            />
-            <Card.Body className="text-center">
-              <Card.Title className="text-success fw-bold">Protista Mirip Jamur</Card.Title>
-              <Card.Text>
-                Protista yang satu ini menghasilkan spora dan hidup di lingkungan lembab. Contohnya 
-                adalah Myxomycota, Acrasiomycota, dan Oomycota.
-              </Card.Text>
+
+        {/* Klasifikasi Protista */}
+        <Col md={6}>
+          <Card>
+            <Card.Header className="bg-success text-white">Klasifikasi Protista</Card.Header>
+            <Card.Body>
+              <Accordion>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>Protista Mirip Hewan (Protozoa)</Accordion.Header>
+                  <Accordion.Body>
+                    <p>
+                      Protozoa merupakan protista uniseluler yang menyerupai hewan. Ciri utamanya meliputi tidak memiliki dinding 
+                      sel, umumnya bersifat heterotrof, hidup bebas atau parasit, dan bereproduksi secara seksual maupun aseksual.
+                    </p>
+                    <p>Protozoa diklasifikasikan menjadi:</p>
+                    <ul>
+                      <li><strong>Rhizopoda</strong>: Bergerak dengan pseudopodia (contoh: Amoeba).</li>
+                      <li><strong>Ciliata</strong>: Bergerak dengan silia (contoh: Paramecium).</li>
+                      <li><strong>Flagellata</strong>: Bergerak dengan flagel (contoh: Trypanosoma).</li>
+                      <li><strong>Sporozoa</strong>: Tidak memiliki alat gerak (contoh: Plasmodium).</li>
+                    </ul>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>Protista Mirip Jamur</Accordion.Header>
+                  <Accordion.Body>
+                    <p>
+                      Protista mirip jamur menghasilkan spora dan hidup di tempat lembab. Contohnya adalah Myxomycota 
+                      (jamur lendir plasmodial), Acrasiomycota (jamur lendir seluler), dan Oomycota (jamur air).
+                    </p>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                  <Accordion.Header>Protista Mirip Tumbuhan (Algae)</Accordion.Header>
+                  <Accordion.Body>
+                    <p>
+                      Algae mampu melakukan fotosintesis. Mereka dapat hidup soliter atau membentuk koloni. Contoh kelompoknya:
+                    </p>
+                    <ul>
+                      <li><strong>Chlorophyta</strong>: Alga hijau dengan klorofil dominan.</li>
+                      <li><strong>Rhodophyta</strong>: Alga merah dengan pigmen fikobilin.</li>
+                      <li><strong>Phaeophyta</strong>: Alga cokelat dengan pigmen fukosantin.</li>
+                      <li><strong>Bacillariophyta</strong>: Diatom dengan cangkang silikat.</li>
+                      <li><strong>Pyrrophyta</strong>: Ganggang api dengan cahaya bioluminesens.</li>
+                      <li><strong>Chrysophyta</strong>: Alga emas dengan pigmen karotenoid.</li>
+                      <li><strong>Euglenophyta</strong>: Protista dengan sifat autotrof dan heterotrof.</li>
+                    </ul>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
             </Card.Body>
-            <Card.Footer className="bg-light text-center text-muted">
-              <small>Jenis: Myxomycota, Acrasiomycota, Oomycota</small>
-            </Card.Footer>
-          </Card>
-        </Col>
-        <Col md={4}>
-          <Card as={Link} to="/algae" className="shadow border-0 text-decoration-none">
-            <Card.Img
-              variant="top"
-              src="https://via.placeholder.com/150"
-              alt="Protista Mirip Tumbuhan"
-              className="p-3"
-            />
-            <Card.Body className="text-center">
-              <Card.Title className="text-success fw-bold">Protista Mirip Tumbuhan (Algae)</Card.Title>
-              <Card.Text>
-                Protista ini dapat melakukan fotosintesis. Mereka hidup soliter atau membentuk koloni, 
-                seperti Chlorophyta dan Phaeophyta.
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer className="bg-light text-center text-muted">
-              <small>Jenis: Chlorophyta, Rhodophyta, Phaeophyta, dll.</small>
-            </Card.Footer>
           </Card>
         </Col>
       </Row>
 
       <Row className="gy-4 mt-4">
-  <Col md={12}>
-    <Card className="shadow border-0">
-      <Card.Header className="bg-primary text-white">Ciri-Ciri Protista</Card.Header>
-      <Card.Body>
-        <ul>
-          <li key="1">Uniseluler atau multiseluler sederhana.</li>
-          <li key="2">Memiliki membran inti (eukariotik).</li>
-          <li key="3">Hidup di lingkungan lembap atau perairan.</li>
-          <li key="4">Bergerak dengan flagel, silia, atau pseudopodia.</li>
-        </ul>
-      </Card.Body>
-    </Card>
-  </Col>
-
-  <Col md={12} className="mt-4">
-    <Card className="shadow border-0">
-      <Card.Header className="bg-info text-white">Manfaat Protista</Card.Header>
-      <Card.Body>
-        <ul>
-          <li>Chlorella digunakan sebagai bahan pembuatan protein sel tunggal (PST).</li>
-          <li>Radiolaria dapat dimanfaatkan sebagai bahan penggosok.</li>
-          <li>Zooplankton menjadi makanan ikan dan arthropoda air.</li>
-          <li>Foraminifera digunakan untuk mendeteksi minyak bumi.</li>
-          <li>Paramaecium sebagai indikator pencemaran air oleh zat organik.</li>
-        </ul>
-      </Card.Body>
-    </Card>
-  </Col>
-</Row>
-
+        <Col md={6}>
+          <Card>
+            <Card.Header className="bg-info text-white">Manfaat Protista</Card.Header>
+            <Card.Body>
+              <ul>
+                <li>Chlorella digunakan sebagai bahan pembuatan protein sel tunggal (PST).</li>
+                <li>Radiolaria dapat dimanfaatkan sebagai bahan penggosok.</li>
+                <li>Zooplankton menjadi makanan ikan dan arthropoda air.</li>
+                <li>Foraminifera digunakan untuk mendeteksi minyak bumi.</li>
+                <li>Paramaecium sebagai indikator pencemaran air oleh zat organik.</li>
+              </ul>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
     </Container>
   );
 };
 
-export default KingdomProtista;
+export default Protista;

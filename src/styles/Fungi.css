@@ -61,6 +61,34 @@
     z-index: 1;
 }
 
+/*ini buat page zygomycota*/
+.zygomycota-materi {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .zygomycota-materi h1 {
+    color: #4caf50;
+    text-align: center;
+  }
+  
+  .zygomycota-materi h2 {
+    color: #000000;
+    margin-top: 20px;
+  }
+  
+  .zygomycota-materi p {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .zygomycota-materi ul {
+    margin-left: 20px;
+  }
+  
+
   
 @keyframes slideUpFadeIn {
     0% {
