@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
@@ -9,45 +10,54 @@ const Home = () => {
     {
       title: 'Keanekaragaman Hayati',
       description: 'Eksplorasi keanekaragaman makhluk hidup di Indonesia',
-      imageUrl: '/images/hewan.jpg',
+      imageUrl: '/images/keanekaragaman.jpg',
       link: '/keanekaragaman',
-      color: '#4ECDC4'
+      color: '#C2FFC7'
     },
     {
       title: 'Virus',
       description: 'Eksplorasi materi mengenai virus virus',
-      imageUrl: '/images/virus.jpg',
+      imageUrl: '/images/virus.background.jpg',
       link: './virus',
-      color: '#45B7D1'
+      color: '#432E54'
     },
     {
       title: 'Plantae',
       description: 'Eksplorasi materi mengenai plantae',
       imageUrl: '/images/plantae.jpg',
       link: './plantae',
-      color: '#96CEB4'
+      color: '#1F4529'
     },
     {
       title: 'Protista',
       description: 'Eksplorasi materi mengenai protista',
       imageUrl: '/images/protista.jpeg',
       link: './protista',
-      color: '#D4A5A5'
+      color: '#4C1F7A'
     },
     {
       title: 'Animalia',
       description: 'Eksplorasi materi mengenai Animalia',
       imageUrl: '/images/animalia.webp',
       link: './Animalia',
-      color: '#FFB347'
+      color: '#219B9D'
+    },
+
+    {
+      title: 'Test Pengetahuan',
+      description: 'Uji sejauh mana kemampuan kamu setelah belajar materi diwebsite ini',
+      imageUrl: '/images/quiz.png',
+      link: './Quiz',
+      color: '#78B3CE'
     }
+
   ];
 
   return (
     <div className="home-container">
       <div className="hero-section4">
         <div className="hero-content">
-          <h1 className="hero-title">"SIBISUK MARBIOLOGI"</h1>
+          <h1 className="hero-title">SIBISUK MARBIOLOGI</h1>
           <p className="hero-subtitle">Platform Pembelajaran Biologi Kelas 10</p>
           <p className="hero-description">
             Belajar biologi jadi lebih menyenangkan dan interaktif
@@ -103,10 +113,48 @@ const Home = () => {
           ))}
         </div>
       </div>
+
+      <div className="cta-section">
+        <div className="cta-content">
+          <div className="cta-text">
+            <h2>Siap Memulai Perjalanan Belajarmu?</h2>
+            <p>Bergabunglah dengan ribuan siswa yang sudah merasakan kemudahan belajar biologi</p>
+          </div>
+          <div className="cta-features">
+            <div className="cta-feature">
+              <i className="fas fa-book-open"></i>
+              <span>Materi Lengkap</span>
+            </div>
+            <div className="cta-feature">
+              <i className="fas fa-video"></i>
+              <span>Video Interaktif</span>
+            </div>
+          </div>
+          <div className="cta-buttons">
+            <button 
+              className="primary-btn" 
+              onClick={() => navigate('/login')}
+            >
+              Daftar Sekarang
+              <i className="fas fa-arrow-right"></i>
+            </button>
+          
+
+            <NavLink 
+   to= 'https://youtu.be/8glI_X1XoBE?si=kQj0OoKjDFzyrRPR' 
+  className="secondary-btn"
+>
+  Lihat Materi
+  <i className="fas fa-play-circle"></i>
+</NavLink>
+
+
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Home;
-
 

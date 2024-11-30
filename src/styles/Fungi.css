@@ -39,8 +39,8 @@
 }
 
 .fungi-card:hover {
-    transform: translateY(-10px); /* Mengangkat card sedikit ke atas */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
 .mb-5 {
     color: black;

@@ -53,11 +53,14 @@
   line-height: 1.6;
   color: white;
 }
-
+.hero-title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
 .cta-button {
   padding: 15px 40px;
   font-size: 1.2rem;
-  background-color: aqua;
+  background-color: #F96E2A;
   color: white;
   border: none;
   border-radius: 30px;
@@ -164,7 +167,7 @@
   line-height: 1.5;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
@@ -186,3 +189,122 @@
   }
 }
 
+.cta-section {
+  background: #89A8B2;
+  color: white;
+  padding: 80px 10%;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-text h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.cta-text p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.cta-features {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 30px;
+  color: black;
+}
+
+.cta-feature {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.1);
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+}
+
+.cta-feature:hover {
+  transform: scale(1.05);
+}
+
+.cta-feature i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.primary-btn, 
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  color: black;
+}
+
+.primary-btn {
+  background-color: white;
+  color: #764ba2;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.primary-btn i,
+.secondary-btn i {
+  margin-left: 5px;
+}
+
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: pulse 5s infinite alternate;
+  z-index: 1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
