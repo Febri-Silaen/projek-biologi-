@@ -1,0 +1,133 @@
+/* Tambahkan animasi global */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+        transform: scale(0.95);
+        opacity: 0.5;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+  
+  /* Gaya untuk struktur kontainer */
+  .struktur-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out; /* Animasi masuk */
+  }
+  
+  /* Gaya untuk judul utama */
+  h1 {
+    color: #2c3e50;
+    text-align: center;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  /* Gaya untuk subjudul */
+  h2 {
+    color: #34495e;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  /* Gaya untuk paragraf */
+  p {
+    line-height: 1.6;
+    color: #555;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  /* Gaya untuk gambar */
+  .virus-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+    animation: scaleUp 1s ease-out;
+  }
+  
+  /* Gaya untuk daftar */
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  /* Gaya footer */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #777;
+    animation: fadeIn 2.5s ease-out;
+  }
+  
+  /* Gambar Struktur Virus
+  Gaya untuk kontainer gambar */
+  .image-container {
+    width: 100%; /* Lebar kontainer, bisa diubah sesuai kebutuhan */
+    max-width: 900px; /* Membatasi lebar maksimal gambar */
+    margin: 40px auto; /* Memberikan margin di atas dan bawah serta mengatur gambar di tengah */
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px; /* Membuat sudut-sudut kontainer lebih halus */
+    box-shadow: 0 8px 1px rgba(0, 0, 0, 0.1); /* Memberikan bayangan untuk efek 3D */
+    background-color: #F1F0E8; /* Warna latar belakang kontainer */
+    transition: all 0.3s ease; /* Efek transisi halus saat kontainer diberi aksi */
+    animation: fadeIn 2s ease-out;
+  }
+  
+  /* Gaya untuk gambar itu sendiri */
+  .image {
+    width: 100%; /* Membuat gambar responsif */
+    height: auto; /* Menjaga proporsi gambar */
+    border-radius: 10px; /* Sudut gambar yang lebih halus */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi saat gambar dihover */
+  }
+  
+  /* Efek saat gambar di-hover */
+  .image-container:hover .image {
+    transform: scale(1.05); /* Memperbesar gambar sedikit saat di-hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan lebih besar saat gambar di-hover */
+  }
+  
+  /* Efek saat container di-hover */
+  .image-container:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar untuk container saat di-hover */
+    transform: translateY(-5px); /* Efek mengangkat sedikit container saat di-hover */
+  }
+  
+  /* Responsif untuk layar kecil */
+  @media (max-width: 600px) {
+    .image-container {
+        width: 100%; /* Gambar lebih lebar pada layar kecil */
+        padding: 20px;
+    }
+  }
