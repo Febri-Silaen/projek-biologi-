@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Card, Image, Accordion } from 'react-bootstrap';
-
+import './Protista.css';
 const Protista = () => {
   return (
     <Container className="my-5">
       <h1 className="text-center mb-4">Kingdom Protista</h1>
 
-      <Row className="align-items-center gy-4">
+      <Row className="align-items">
         <Col md={6}>
           <div>
             <h2>Apa itu Protista?</h2>

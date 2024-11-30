@@ -410,26 +410,7 @@ function Animalia() {
             </div>
           </div>
 
-          <div className="type-card">
-            <img src="/images/arthropoda.jpg" alt="Arthropoda" />
-            <h4>Arthropoda (Hewan Berbuku-buku)</h4>
-            <div className="type-content">
-              <h5>Klasifikasi:</h5>
-              <ul>
-                <li>Crustacea (Udang, kepiting)</li>
-                <li>Arachnida (Laba-laba, kalajengking)</li>
-                <li>Insecta (Serangga)</li>
-                <li>Myriapoda (Kelabang, kaki seribu)</li>
-              </ul>
-              <h5>Karakteristik Umum:</h5>
-              <ul>
-                <li>Eksoskeleton dari kitin</li>
-                <li>Tubuh bersegmen</li>
-                <li>Kaki beruas-ruas</li>
-                <li>Mengalami molting</li>
-              </ul>
-            </div>
-          </div>
+         
         </div>
       </div>
 
@@ -528,6 +509,34 @@ function Animalia() {
               </ul>
             </div>
           </div>
+
+          <div className="type-card">
+            <img src="/images/arthropoda.jpg" alt="Arthropoda" />
+            <h4>Arthropoda (Hewan Berbuku-buku)</h4>
+            <div className="type-content">
+              <h5>Klasifikasi:</h5>
+              <ul>
+                <li>Crustacea (Udang, kepiting)</li>
+                <li>Arachnida (Laba-laba, kalajengking)</li>
+                <li>Insecta (Serangga)</li>
+                <li>Myriapoda (Kelabang, kaki seribu)</li>
+              </ul>
+              <h5>Karakteristik Umum:</h5>
+              <ul>
+                <li>Eksoskeleton dari kitin</li>
+                <li>Tubuh bersegmen</li>
+                <li>Kaki beruas-ruas</li>
+                <li>Mengalami molting</li>
+              </ul>
+            </div>
+          </div>
+
+
+
+
+
+
+
 
           <div className="type-card">
             <img src="/images/mammalia.jpeg" alt="Mammalia" />
@@ -703,6 +712,8 @@ function Animalia() {
               </div>
             </div>
           </div>
+
+
 
           <div className="animal-showcase">
             <img src="/images/kelelawar.jpg" alt="Kelelawar" />

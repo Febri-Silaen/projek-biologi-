@@ -42,7 +42,10 @@
     transform: translateY(-10px); /* Mengangkat card sedikit ke atas */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
 }
-
+.mb-5 {
+    color: black;
+    text-align: left;
+}
 .animate-text {
     position: relative;
     animation: slideUpFadeIn 2s ease-out forwards;
@@ -61,7 +64,6 @@
     z-index: 1;
 }
 
-/*ini buat page zygomycota*/
 .zygomycota-materi {
     max-width: 800px;
     margin: 0 auto;
