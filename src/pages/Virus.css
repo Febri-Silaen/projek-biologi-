@@ -2,13 +2,12 @@
 .hero-section2 {
   display: flex;
   align-items: center;
-  min-height: 80vh;
+  min-height: 35vh;
   width: 100%;
   padding: 60px 0;
   background-image: url('../../public/images/virus.background.jpg');
   border-radius: 20px;
-  margin-bottom: 60px;
-  
+  margin-bottom: 5px;
 
 }
 .container{
@@ -16,11 +15,14 @@
   color: white;
   font-family: 'Times New Roman', Times, serif;
 }
+
 .display-4{
-  font-size: 60%;
+  font-size: 63%;
 }
+
 .judul{
-  font-size: 50px;
+  font-size: 35px;
+  color: white;
 }
   
   .card-wrapper::before {
@@ -118,7 +120,9 @@
   
   h6 {
     animation: slideDown 1.5s ease-out;
+    font-size: 18px;
   }
+
   h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
@@ -134,6 +138,7 @@
     animation: fadeIn 2s ease-in-out;
     margin-top: 0px;
   }
+
   .del1 p{
     margin: 20px 0;
     padding: 15px;
@@ -145,6 +150,7 @@
     overflow: hidden;
     animation: slideIn 1.5s ease-in-out;
   }
+
   strong {
     color: #4A628A;
   }
@@ -182,44 +188,43 @@
   }
   
   
-      /* Animasi */
-      @keyframes fadeInScale {
-        from {
-          opacity: 0;
-          transform: scale(0.8);
-        }
-        to {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
+  /* Animasi */
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
   
-      @keyframes slideDown {
-        from {
-          transform: translateY(-20px);
-          opacity: 0;
-        }
-        to {
-          transform: translateY(0);
-          opacity: 1;
-        }
-      }
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+     }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+     }
+  }
   
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   
-      @keyframes pulsate {
-        0%, 100% {
-          transform: translateX(-50%) scale(1);
-        }
-        50% {
-          transform: translateX(-50%) scale(1.1);
-}
+  @keyframes pulsate {
+    0%, 100% {
+      transform: translateX(-50%) scale(1);
+    }
+    50% {
+      transform: translateX(-50%) scale(1.1);
+    }
  }
-  
