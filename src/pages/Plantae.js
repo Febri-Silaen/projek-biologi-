@@ -7,7 +7,7 @@ const Plantae = () => {
     <section>
       <h1 className="text-center my-4">Kingdom Plantae</h1>
       <Row className="align-items-center">
-        {/* Bagian Kiri: Deskripsi */}
+  
         <Col md={6}>
           <div>
           <h1>Kingdom Plantae</h1>
@@ -67,7 +67,7 @@ const Plantae = () => {
         </Col>
       </Row>
 
-      {/* Bagian Tambahan */}
+     
       <Row className="mt-5">
         <Col md={12}>
           <h2 className="text-center">Klasifikasi Kingdom Plantae</h2>

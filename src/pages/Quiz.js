@@ -17,9 +17,93 @@ const quizData = [
           'Variasi genetik dalam satu spesies',
           'Kompleksitas ekosistem'
         ],
-        correctAnswer: 0
+        correctAnswer: 2
       },
-      // Tambahkan pertanyaan lain
+      
+      {
+        text: 'Berapa perkiraan jumlah spesies yang telah dikatalogkan di Bumi?',
+        options: [
+          '100.000 spesies',
+          ' 500.000 spesies',
+          '1.2 juta spesies',
+          '8.7 juta spesies'
+        ],
+        correctAnswer: 3
+      },
+
+      {
+        text: 'Apa yang dimaksud dengan keanekaragaman genetik?',
+
+        options: [
+          'Perbedaan kingdom dalam klasifikasi',
+          ' Variasi dalam material genetik suatu spesies',
+          'Jumlah total spsies di dunia',
+          ' Perbedaan ekosistem'
+        ],
+        correctAnswer: 2
+      },
+
+      {
+        text: 'Berapa persen biodiversitas dunia yang dimiliki Indonesia?',
+
+        options: [
+          ' 5%',
+          '10%',
+          '15%',
+          ' 17%'
+        ],
+        correctAnswer: 4
+      },
+
+      {
+        text: 'Apa yang termasuk dalam jasa ekosistem penyediaan?',
+
+        options: [
+          ' Regulasi iklim',
+          'penyerbukan',
+          'Pangan dan air bersih',
+          'Nilai spiritual'
+        ],
+        correctAnswer: 3
+      },
+
+      
+      {
+        text: 'Dalam sistem klasifikasi tradisional, apa urutan terakhir?',
+
+        options: [
+          'Genus',
+          'Kingdom',
+          'Famili',
+          'Spesies'
+        ],
+        correctAnswer: 4
+      },
+
+      {
+        text: 'Apa yang dimaksud dengan konservasi in-situ?',
+
+        options: [
+          'Perlindungan di luar habitat asli',
+          'perlindungan di dalam habitat asli',
+          'Penanaman di kebun raya',
+          'Pembibitan di laboratorium'
+        ],
+        correctAnswer: 2
+      },
+
+      {
+        text: 'Berapa jumlah spesies mamalia di Indonesia?',
+
+        options: [
+          '250',
+          '350',
+          '415',
+          '515'
+        ],
+        correctAnswer: 4
+      },
+
     ]
   },
   {
@@ -38,10 +122,597 @@ const quizData = [
         ],
         correctAnswer: 2
       },
-      // Tambahkan pertanyaan lain
+
+      {
+        text: 'Dari manakah asal kata "virus"?',
+        options: [
+          'Bahasa Inggris',
+          'Bahasa Latin (virion)',
+          'Bahasa Yunani',
+          'Bahasa Prancis'
+        ],
+        correctAnswer: 2
+      },
+
+      {
+        text: 'Siapakah ilmuwan pertama yang mengamati penyakit bintik kuning pada daun tembakau pada tahun 1883?',
+
+        options: [
+          'Dmitri Ivanovsky',
+          'Martinus Beijerinck',
+          'Adolf Meyer',
+          'Wendell Meredith Stanley'
+        ],
+        correctAnswer: 3
+      },
+
+      {
+        text: 'Pada tahun berapa Dmitri Ivanovsky melakukan percobaan penyaringan getah tanaman tembakau?',
+        
+        options: [
+          '1883',
+          '1892',
+          '1897',
+          '1935'
+        ],
+        correctAnswer: 2
+      },
+
+      {
+        text: 'Apa kesimpulan Martinus Beijerinck tentang agen penyebab penyakit pada tanaman tembakau?',
+        
+        options: [
+          'Bakteri biasa',
+          'Partikel lebih kecil dan sederhana dari bakteri',
+          'Racun tanaman',
+          ' Mikroorganisme kompleks'
+        ],
+        correctAnswer: 2
+      },
+
+      {
+        text: 'Siapakah ilmuwan yang berhasil mengkristalkan partikel penyebab penyakit tanaman tembakau pada tahun 1935?',
+        
+        options: [
+          'Adolf Meyer',
+          'Dmitri Ivanovsky',
+          'Martinus Beijerinck',
+          'Wendell Meredith Stanley'
+        ],
+        correctAnswer: 4
+      },
+
+      {
+        text: ' Apakah nama virus yang ditemukan pada tanaman tembakau?',
+        
+        options: [
+          'Corona Virus',
+          ' Influenza Virus',
+          'obacco Mosaic Virus (TMV)',
+          'HIV Virus'
+        ],
+        correctAnswer: 3
+      },
+     
+      {
+        text: ' Apa yang dilakukan Adolf Meyer dalam percobaannya?',
+        
+        options: [
+          'Mengkristalkan virus',
+          'Menyaring getah tanaman',
+          ' Menyemprotkan getah dari tanaman sakit ke tanaman sehat',
+          ' Menggunakan mikroskop elektron'
+        ],
+        correctAnswer: 3
+      },
+
+      {
+        text: 'Menurut percobaan Beijerinck, agen penyakit tersebut memiliki karakteristik apa?',
+        
+        options: [
+          'Dapat dikembangbiakkan di cawan petri',
+          'Dapat dinonaktifkan dengan alkohol',
+          ' Tidak dapat dikembangbiakkan di cawan petri',
+          'Mudah dilihat dengan mikroskop biasa'
+        ],
+        correctAnswer: 3
+      },
+
+      {
+        text: ' Apa kesimpulan awal Meyer tentang penyebab penyakit?',
+        
+        options: [
+          'Virus ukuran besar',
+          'Bakteri berukuran normal',
+          ' Bakteri berukuran lebih kecil dari biasanya',
+          'Racun tanaman'
+        ],
+        correctAnswer: 3
+      },
+
+    
+
+
+      
     ]
   },
-  // Tambahkan kategori lain
+
+
+  {
+    id: 3,
+    category: 'Plantae',
+    icon: '🌱',
+    color: 'orange',
+    questions: [
+      {
+        text: ' Apakah yang dimaksud dengan ciri utama Kingdom Plantae?',
+        options: [
+          'Hidup di air dan dapat bergerak bebas',
+          'Multiseluler dan mampu melakukan fotosintesis ',
+          'Memiliki sistem pencernaan komplek             ',
+          'Hanya dapat hidup di daratan kering   '
+        ],
+        correctAnswer: 2
+      },
+      {
+        text: ' Apa fungsi klorofil pada tumbuhan?',
+        options: [
+          'Menghasilkan protein',
+          'Menyimpan air',
+          'Proses fotosintesis',
+          'Melindungi dari serangan hama'
+       
+        ],
+        correctAnswer: 3
+      },
+
+
+      {
+        text: ' Berapa perkiraan jumlah spesies dalam Kingdom Plantae?',
+        options: [
+          '100.000 spesies',
+          '200.000 spesies',
+          '300.000 spesies',
+          '400.000 spesies'
+       
+        ],
+        correctAnswer: 4
+      },
+
+      {
+        text: ' Filum manakah yang bereproduksi menggunakan spora?',
+        options: [
+          'Spermatophyta',
+          'Bryophyta',
+          'Pteridophyta',
+          'Animalia'
+       
+        ],
+        correctAnswer: 3
+      },
+
+      {
+        text: '  Ciri apakah yang membedakan Kingdom Plantae dengan Kingdom Animalia?',
+
+        options: [
+          'Memiliki dinding sel',
+          'Bersifat multiseluler',
+          'Kemampuan fotosintesis',
+          'Memiliki inti sel'
+       
+        ],
+        correctAnswer: 3
+      },
+
+      {
+        text: ' Tumbuhan lumut termasuk dalam filum?',
+
+
+        options: [
+          'Spermatophyta',
+          'Pteridophyta',
+          ' Bryophyta',
+          'Animalia'
+       
+        ],
+        correctAnswer: 3
+      },
+
+      {
+        text: ' Salah satu manfaat Kingdom Plantae adalah?',
+
+
+        options: [
+          'Menghasilkan karbondioksida',
+          'Menghasilkan oksigen melalui fotosintesis',
+          ' Menurunkan suhu global',
+          'Memproduksi protein hewani'
+       
+        ],
+        correctAnswer: 2
+      },
+
+      {
+        text: 'Struktur apakah yang membedakan tumbuhan dari organisme lain?',
+
+
+
+        options: [
+          'Klorofil',
+          'Dinding sel dari selulosa',
+          ' Kemampuan bergerak',
+          'Sistem pencernaan'
+       
+        ],
+        correctAnswer: 2
+      },
+
+      {
+        text: 'Tumbuhan berbiji termasuk dalam filum?',
+
+
+        options: [
+          'Bryophyta',
+          ' Pteridophyta',
+          ' Spermatophyta',
+          ' Animalia'
+       
+        ],
+        correctAnswer: 3
+      }
+
+      
+    ]
+  },
+
+  
+
+  {
+    id: 4,
+    category: 'Fungi',
+    icon: '🍄',
+    color: '#D3F1DF',
+    questions: [
+      {
+        text: 'Apa arti kata "Fungi" dalam Bahasa Latin?',
+        options: [
+          'Tumbuhan',
+          'Jamur',
+          'Mikroorganisme',
+          'Organisme'
+        ],
+        correctAnswer: 1
+      },
+
+      {
+        text: 'Fungi bersifat heterotrof, artinya...',
+        options: [
+          ' Dapat melakukan fotosintesis',
+          'Menghasilkan makanannya sendiri',
+          ' Mendapatkan nutrisi dari bahan organik di lingkungannya',
+          'Tidak membutuhkan nutrisi'
+        ],
+        correctAnswer: 2
+      },
+
+      {
+        text: 'Apakah bahan utama penyusun dinding sel fungi?',
+        options: [
+          'Selulosa',
+          'Kitin',
+          'Proteina',
+          ' Lignin'
+        ],
+        correctAnswer: 1
+      },
+
+      {
+        text: 'Bagaimana cara reproduksi fungi?',
+        options: [
+          'Hanya secara seksual',
+          'Hanya secara aseksual',
+          'Secara seksual dan aseksual dengan membentuk spora',
+          ' Melalui pencangkokan'
+        ],
+        correctAnswer: 2
+      },
+
+      {
+        text: 'Struktur dasar pada fungi yang menyerupai benang halus disebut...',
+        options: [
+          'Spora',
+          'Miselium',
+          'Hifa',
+          ' Zigospora'
+        ],
+        correctAnswer: 2
+      },
+
+      {
+        text: ' Kelompok fungi yang belum diketahui cara reproduksi seksualnya adalah...',
+
+        options: [
+          ' Zygomycota',
+          'Ascomycota',
+          'Basidiomycota',
+          'Deuteromycota'
+        ],
+        correctAnswer: 3
+      },
+
+      {
+        text: ' Ciri khas Ascomycota adalah...',
+
+        options: [
+          'Menghasilkan zigospora',
+          'Menghasilkan askospora dalam askus',
+          'Memiliki bentuk seperti payung',
+          'Tidak memiliki septa'
+        ],
+        correctAnswer: 3
+      },
+
+      
+      {
+        text: 'Pada hifa senositik, proses pembelahan ditandai oleh...',
+
+        options: [
+          'Pembelahan sitoplasma',
+          'Pembelahan sel',
+          ' Pembelahan inti sel berkali-kali tanpa diikuti pembelahan sitoplasma',
+          'Pertumbuhan membran sel'
+        ],
+        correctAnswer: 2
+      },
+
+      {
+        text: 'Fungi umumnya hidup sebagai...',
+
+        options: [
+          'Produsen',
+          'Konsumenl',
+          'Saprofit atau parasit',
+          'Dekomposer primer'
+        ],
+        correctAnswer: 2
+      },
+
+      {
+        text: ' Septa pada hifa memiliki fungsi...',
+
+        options: [
+          'Mencegah pertumbuhan',
+          ' Memisahkan inti sel',
+          ' Menghambat nutrisi',
+          'Mempermudah aliran organel antar sel'
+        ],
+        correctAnswer: 3
+      },
+    ]
+  },
+
+
+  {
+    id: 5,
+    category: 'Animalia',
+    icon: '🦋',
+    color: '#8174A0',
+    questions: [
+      {
+        text: 'Berapa perkiraan jumlah spesies hewan yang sudah teridentifikasi?',
+        options: [
+          '1 juta',
+          '2 juta',
+          '5 juta', 
+          '10 juta'
+        ],
+        correctAnswer: 1
+      },
+      {
+        text: 'Karakteristik dasar sel hewan adalah...',
+        options: [
+          'Memiliki dinding sel',
+          'Memiliki kloroplas',
+          'Membran sel fleksibel tanpa dinding sel',
+          'Bersifat autotrof'
+        ],
+        correctAnswer: 2
+      },
+      {
+        text: 'Kapan kemunculan hewan multiseluler pertama diperkirakan terjadi?',
+        options: [
+          '400 juta tahun lalu',
+          '600 juta tahun lalu',
+          '500 juta tahun lalu',
+          '300 juta tahun lalu'
+        ],
+        correctAnswer: 1
+      },
+      {
+        text: 'Yang BUKAN merupakan jaringan utama pada hewan adalah...',
+        options: [
+          'Epitel',
+          'Otot',
+          'Saraf',
+          'Akar'
+        ],
+        correctAnswer: 3
+      },
+      {
+        text: 'Metode reproduksi aseksual pada hewan tidak termasuk...',
+        options: [
+          'Pembelahan biner',
+          'Budding',
+          'Fertilisasi internal',
+          'Fragmentasi'
+        ],
+        correctAnswer: 2
+      },
+      {
+        text: 'Hewan nokturnal yang memiliki racun di lengannya adalah...',
+        options: [
+          'Kelelawar',
+          'Kukang',
+          'Orangutan',
+          'Anoa'
+        ],
+        correctAnswer: 1
+      },
+      {
+        text: 'Kelompok vertebrata yang mengalami metamorfosis adalah...',
+        options: [
+          'Reptilia',
+          'Mammalia',
+          'Amphibia',
+          'Aves'
+        ],
+        correctAnswer: 2
+      },
+      {
+        text: 'Karakteristik umum Arthropoda adalah...',
+        options: [
+          'Tidak memiliki eksoskeleton',
+          'Eksoskeleton dari selulosa',
+          'Eksoskeleton dari kitin',
+          'Tubuh tidak bersegmen'
+        ],
+        correctAnswer: 2
+      },
+      {
+        text: 'Yang termasuk mamalia laut adalah...',
+        options: [
+          'Hiu paus',
+          'Dugong',
+          'Lumba-lumba',
+          'Semua benar'
+        ],
+        correctAnswer: 3
+      },
+      {
+        text: 'Hewan endemik Sulawesi yang termasuk Bovidae terkecil di dunia adalah...',
+        options: [
+          'Komodo',
+          'Orangutan',
+          'Anoa',
+          'Cendrawasih'
+        ],
+        correctAnswer: 2
+      }
+    ],
+  },
+
+
+
+
+  {
+    id: 6,
+    category: 'Protista',
+    icon: '🔬',
+    color: '#85A98F',
+    questions: [
+      {
+        question: "Protista adalah kingdom organisme yang bersifat...",
+        options: [
+          "Prokariotik",
+          "Eukariotik", 
+          "Tidak berinti",
+          "Kompleks"
+        ],
+        correctAnswer: 1
+      },
+      {
+        question: "Mayoritas protista hidup di...",
+        options: [
+          "Daratan kering",
+          "Perairan", 
+          "Gurun",
+          "Kawah panas"
+        ],
+        correctAnswer: 1
+      },
+      {
+        question: "Yang termasuk protista mirip hewan (protozoa) adalah...",
+        options: [
+          "Chlorella",
+          "Amoeba", 
+          "Diatom",
+          "Ganggang merah"
+        ],
+        correctAnswer: 1
+      },
+      {
+        question: "Protista yang bergerak menggunakan silia disebut...",
+        options: [
+          "Rhizopoda",
+          "Flagellata", 
+          "Ciliata",
+          "Sporozoa"
+        ],
+        correctAnswer: 2
+      },
+      {
+        question: "Euglenophyta memiliki sifat...",
+        options: [
+          "Hanya heterotrof",
+          "Hanya autotrof", 
+          "Autotrof dan heterotrof",
+          "Tidak memiliki nutrisi"
+        ],
+        correctAnswer: 2
+      },
+      {
+        question: "Protista dengan pigmen fikobilin adalah...",
+        options: [
+          "Chlorophyta",
+          "Rhodophyta", 
+          "Phaeophyta",
+          "Chrysophyta"
+        ],
+        correctAnswer: 1
+      },
+      {
+        question: "Plasmodium termasuk dalam klasifikasi...",
+        options: [
+          "Rhizopoda",
+          "Sporozoa", 
+          "Ciliata",
+          "Flagellata"
+        ],
+        correctAnswer: 1
+      },
+      {
+        question: "Manfaat Radiolaria adalah...",
+        options: [
+          "Bahan makanan",
+          "Bahan penggosok", 
+          "Indikator pencemaran",
+          "Menghasilkan minyak"
+        ],
+        correctAnswer: 2
+      },
+      {
+        question: "Protista yang dapat bercahaya adalah...",
+        options: [
+          "Chrysophyta",
+          "Pyrrophyta", 
+          "Euglenophyta",
+          "Bacillariophyta"
+        ],
+        correctAnswer: 1
+      },
+      {
+        question: "Chlorella dimanfaatkan sebagai...",
+        options: [
+          "Bahan bakar",
+          "Protein sel tunggal", 
+          "Obat-obatan",
+          "Pupuk"
+        ],
+        correctAnswer: 1
+      },
+    ],
+},
+
 ];
 
 const Quiz = () => {
