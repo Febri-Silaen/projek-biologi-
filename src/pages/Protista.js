@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card, Image, Accordion } from 'react-bootstrap';
-import './Protista.css';
+import '../styles/Protista.css';
 const Protista = () => {
   return (
     <Container className="my-5">

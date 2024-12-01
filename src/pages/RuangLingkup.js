@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import './RuangLingkup.css';
+import '../styles/RuangLingkup.css';
 
 const RuangLingkup = () => {
   const animationRef = useRef(null);

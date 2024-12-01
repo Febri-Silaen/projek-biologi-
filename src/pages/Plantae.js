@@ -2,6 +2,7 @@ import React from "react";
 import { Accordion, Card, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 const Plantae = () => {
   return (
     <section>

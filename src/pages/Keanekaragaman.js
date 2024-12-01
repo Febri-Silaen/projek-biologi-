@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Keanekaragaman.css';
+import '../styles/Keanekaragaman.css';
 import { Nav, Tab, Accordion, Card, Button, Badge } from 'react-bootstrap';
 
 const Keanekaragaman = () => {
