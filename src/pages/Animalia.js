@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Animalia.css';
+import '../styles/Animalia.css';
 
 function Animalia() {
   const [activeSection, setActiveSection] = useState('home');
