@@ -1,7 +1,7 @@
 import React from "react";
 import { Accordion, Card, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import '../styles/Plantae.css';
+
 
 const Plantae = () => {
   return (
