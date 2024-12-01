@@ -18,10 +18,18 @@ const Fungi = () => {
                     “Fungi” merupakan Bahasa latin dari kata Jamur. Jamur atau fungi merupakan tanaman yang bersifat eukariotik heterotrof dan tidak berklorofil. 
                     Jamur bersifat eukariotik heterotrof yang artinya mendapatkan nutrisi dari bahan organik di lingkungan mereka hidup. 
                     Fungi memiliki kemampuan untuk mencerna makanan di luar tubuh mereka dan kemudian menyerap molekul nutrisi ke dalam sel-selnya.
+                    Kata  jamur berasal dari kata latin yakni fungi.  Jamur (fungi) bereproduksi secara aseksual yang menghasilkan spora, kuncup, dan fragmentasi. 
+                    Sedangkan dengan cara seksual pada zigospora, askospora, dan basidiospora. Jamur (fungi) hidup di tempat-tempat yang lembap, air laut, air tawar, 
+                    tempat yang asam dan bersimbosis dengan ganggang hingga kemudian membentuk lumut (lichenes). Menurut Gandjar (2006) jamur atau fungi adalah sel 
+                    eukariotik yang tidak memiliki klorofil, tumbuh sebagai hifa, memiliki dinding sel yang mengandung kitin, bersifat heterotrof, menyerap nutrien
+                    melalui dinding selnya, mengekskresikan enzim ekstraselular ke lingkungan melalui spora, dan melakukan reproduksi secara seksual dan aseksual. 
+                    Sementara menurut Campbell (2003) Fungi adalah eukariota, dan sebagian besarnya merupakan eukariota multiseluler. Meskipun fungi pernah dikelompokkan 
+                    ke dalam kingdom tumbuhan, fungi adalah organisme unik yang umumnya berbeda dari eukariota lainnya ditinjau dari caranya memperoleh makanan, organisasi 
+                    struktural, pertumbuhan dan cara bereproduksi.
                 </p>
             </div>
 
-            <div className="mb-5">
+            <div className="mb-4">
                 <h4>Ciri-ciri Umum Fungi</h4>
                 <ul>
                     <li>Fungi bersifat eukariotik, yaitu memiliki inti sel yang terbungkus membran.</li>
@@ -36,7 +44,7 @@ const Fungi = () => {
             </div>
 
             <div className="row">
-                <div className="col-md-6 mb-4">
+                <div className="fungi-card-wrapper">
                     <div className="card-container">
                         <Link to="/zygomycota" className="text-decoration-none">
                         <div className="card h-100 shadow-sm fungi-card">
@@ -52,7 +60,7 @@ const Fungi = () => {
                     </div>
                 </div>
 
-                <div className="col-md-6 mb-4">
+                <div className="fungi-card-wrapper">
                     <div className="card-container">
                         <Link to="/ascomycota" className="card-img-top" alt="Ascomycota">
                         <div className="card h-100 shadow-sm fungi-card">
@@ -68,7 +76,7 @@ const Fungi = () => {
                     </div>
                 </div>
 
-                <div className="col-md-6 mb-4">
+                <div className="fungi-card-wrapper">
                     <div className="card-container">
                         <Link to="/basidiomycota" className="card-img-top" alt="Basidiomycota">
                         <div className="card h-100 shadow-sm fungi-card">
@@ -84,21 +92,23 @@ const Fungi = () => {
                     </div>
                 </div>
 
-                <div className="col-md-6 mb-4">
+                <div className="fungi-card-wrapper">
                     <div className="card-container">
+                        <Link to="/deuteromycota" className='card-img-top' alt="Deuteromycota">
                         <div className="card h-100 shadow-sm fungi-card">
                             <img src={deuteromycota} className="card-img-top" alt="Deuteromycota" />
                             <div className="card-body">
                                 <h5 className="card-title">Deuteromycota</h5>
                                 <p className="card-text">
-                                    Deuteromycota atau jamur tidak sempurna adalah kelompok fungi yang belum diketahui cara reproduksi seksualnya.
+                                    Deuteromycota (jamur tidak sempurna) adalah kelompok fungi yang belum diketahui cara reproduksi seksualnya.
                                 </p>
                             </div>
                         </div>
+                        </Link>
                     </div>
                 </div>
 
-                <div className="mb-5">
+                <div className="mb-3">
                 <h4>Struktur Tubuh Fungi</h4>
                 <div className="struktur-fungi">
                 <img src={StrukturFungi} className/>

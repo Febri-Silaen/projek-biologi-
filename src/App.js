@@ -12,6 +12,11 @@ import BentukV from "./pages/klasifikasi/BentukV";
 import ReplikasiV from "./pages/klasifikasi/ReplikasiV";
 import PenyakitV from "./pages/klasifikasi/PenyakitV";
 
+import Zygomycota from "./pages/Zygomycota";
+import Ascomycota from './pages/klasifikasi/Ascomycota';
+import Basidiomycota from './pages/klasifikasi/Basidiomycota';
+import Deuteromycota from './pages/klasifikasi/Deuteromycota';
+
 import Protista from './pages/Protista';
 import Fungi from './pages/Fungi';
 import Plantae from './pages/Plantae';
@@ -41,6 +46,10 @@ function App() {
             <Route path="/Animalia" element={<Animalia />} />
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/zygomycota" element={<Zygomycota/>}/>
+            <Route path="/basidiomycota" element={<Basidiomycota/>}/>
+            <Route path="/deuteromycota" element={<Deuteromycota/>}/>
+            <Route path="/ascomycota" element={<Ascomycota/>}/>
            
           </Routes>
         </main>

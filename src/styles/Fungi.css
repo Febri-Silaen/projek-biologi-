@@ -42,10 +42,29 @@
     transform: translateY(-10px); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
+
+.fungi-card-wrapper {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
 .mb-5 {
+    color: black;
+    text-align: center;
+}
+
+.mb-4 {
     color: black;
     text-align: left;
 }
+
+.mb-3 {
+    color: black;
+    text-align: left;
+}
+
 .animate-text {
     position: relative;
     animation: slideUpFadeIn 2s ease-out forwards;
@@ -63,33 +82,6 @@
     display: inline-block;
     z-index: 1;
 }
-
-.zygomycota-materi {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .zygomycota-materi h1 {
-    color: #4caf50;
-    text-align: center;
-  }
-  
-  .zygomycota-materi h2 {
-    color: #000000;
-    margin-top: 20px;
-  }
-  
-  .zygomycota-materi p {
-    text-align: justify;
-    line-height: 1.6;
-  }
-  
-  .zygomycota-materi ul {
-    margin-left: 20px;
-  }
-  
 
   
 @keyframes slideUpFadeIn {
@@ -109,5 +101,13 @@
     }
     100% {
         text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+    }
+}
+
+/*ini untuk responsif layar kecil*/
+@media (max-width: 768px) {
+    .fungi-card-wrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
