@@ -58,6 +58,7 @@ const Keanekaragaman = () => {
       <div className="container my-5">
         <Tab.Content>
       
+
           <Tab.Pane active={activeTab === 'pengantar'}>
             <div className="content-section">
               <div className="section-header">
@@ -181,6 +182,15 @@ const Keanekaragaman = () => {
               </div>
             </div>
           </Tab.Pane>
+
+
+
+
+
+
+
+
+
 
           <Tab.Pane active={activeTab === 'sejarah'}>
             <div className="content-section">
@@ -629,7 +639,7 @@ const Keanekaragaman = () => {
   </div>
 </Tab.Pane>
 
-{/* Tab Manfaat */}
+
 <Tab.Pane active={activeTab === 'manfaat'}>
   <div className="content-section">
     <div className="section-header">
