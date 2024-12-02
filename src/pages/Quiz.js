@@ -757,7 +757,7 @@ const Quiz = () => {
       setScore(prevScore => prevScore + 1);
     }
 
-    setTimeout(handleNextQuestion, 500);
+    setTimeout(handleNextQuestion, 2000);
   };
 
   const handleNextQuestion = () => {
