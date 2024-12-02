@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../styles/Virus.css';
+import '../pages/Virus.css';
 
 function Virus() {
   return (
@@ -21,9 +21,9 @@ function Virus() {
 
         <div className="del1">
         <h2 className="isi1">Sejarah Virus</h2>
-        <h6>Istilah virus berasal dari bahasa Latin,virion yang artinya racun. Sejarah penemuan virus dimulai pada tahun 1883 dengan 
+        <h5>Istilah virus berasal dari bahasa Latin,virion yang artinya racun. Sejarah penemuan virus dimulai pada tahun 1883 dengan 
           ditemukannya penyakit yang menyebabkan adanya bintik-bintik kuning pada daun tembakau. 
-          Penyakit tersebut kemudian dikenal dengan istilah penyakit mosaik tembakau. Beberapa ilmuwan yang terlibat dalam penemuan virus adalah sebagai berikut :</h6>
+          Penyakit tersebut kemudian dikenal dengan istilah penyakit mosaik tembakau. Beberapa ilmuwan yang terlibat dalam penemuan virus adalah sebagai berikut :</h5>
         <p><strong>a. Adolf Meyer.</strong>  Pada tahun 1883, Adolf Meyer, seorang ilmuwan Jerman mengamati penyakit yang menyebabkan adanya bintik-bintik kuning pada daun tembakau. Meyer kemudian melakukan percobaan dengan menyemprotkan getah yang diekstraksi dari tanaman tembakau yang sakit ke tanaman tembakau yang sehat. 
         Ternyata, tanaman tembakau yang sehat menjadi sakit. Meyer kemudian mencoba mengamati daun tembakau yang sakit dengan menggunakan mikroskop biasa. Akan tetapi, ia tidak dapat menemukan bakteri yang diduga menjadi penyebab penyakit tersebut. Meyer kemudian menyimpulkan bahwa bakteri penyebab penyakit pada tanaman tembakau berukuran lebih kecil dari bakteri biasanya. </p>
         <p><strong>b. Dmitri Ivanovsky.</strong>  Pada tahun 1892, Dmitri Ivanovsky, seorang ilmuwan Rusia melakukan percobaan dengan menyaring getah tanaman tembakau yang sakit dengan menggunakan saringan bakteri. 

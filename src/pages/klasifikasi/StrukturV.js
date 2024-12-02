@@ -20,7 +20,6 @@ function StrukturV() {
             <img className="image"
             src="https://awsimages.detik.net.id/community/media/visual/2022/11/22/modul-pembelajaran-biologi-kemendikbud.jpeg?w=600&q=90"/>
 
-            
             </div>
             <ul>
                 <li>a. Kepala </li>
@@ -30,6 +29,7 @@ function StrukturV() {
                 <li>c. Ekor </li>
                 <p>Ekor merupakan bagian yang berfungsi untuk menempel pada sel inang. Ekor terdiri atas serabut ekor dan lempeng dasar. Serabut ekor berfungsi melekatkan diri pada sel inang. Sementara itu, lempeng dasar yang berisi jarum penusuk berfungsi untuk menginjeksikan DNA ke dalam sel inang.</p>
             </ul><br></br>
+
             <h1>Fakta Menarik Tentang Virus </h1>
             <ul>
                 <li>Virus dapat berukuran antara 20 hingga 300 nanometer.</li>
@@ -39,9 +39,11 @@ function StrukturV() {
                 <li>Virus ditemukan hampir di semua lingkungan, termasuk di tempat ekstrem seperti gunung es, dasar laut, dan kawah vulkanik. </li>
                 <li>Virus tidak hanya menyerang manusia, tetapi juga organisme lain seperti tumbuhan, hewan, bakteri (disebut bakteriofag), bahkan virus lain.</li>
             </ul>
+
             <footer>
                 <p></p>
             </footer>
+            
         </div>
     );
 }
