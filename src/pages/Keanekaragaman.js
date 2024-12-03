@@ -257,7 +257,7 @@ function Keanekaragaman() {
             </Card.Text>
             <Button 
               variant="primary" 
-              href="./materi/materi.pdf"
+              href="./materi/materi2.pdf"
               download
             >
               Unduh PDF
@@ -276,7 +276,7 @@ function Keanekaragaman() {
             </Card.Text>
             <Button 
               variant="success" 
-              href="../materi/ekosistem-konservasi.pdf" 
+              href="./materi/materi3.pdf" 
               download
             >
               Unduh PDF
