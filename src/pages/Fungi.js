@@ -62,7 +62,7 @@ const Fungi = () => {
 
                 <div className="fungi-card-wrapper">
                     <div className="card-container">
-                        <Link to="/ascomycota" className="card-img-top" alt="Ascomycota">
+                        <Link to="/ascomycota" className="text-decoration-none" alt="Ascomycota">
                         <div className="card h-100 shadow-sm fungi-card">
                             <img src={ascomycota} className="card-img-top" alt="Ascomycota" />
                             <div className="card-body">
@@ -78,7 +78,7 @@ const Fungi = () => {
 
                 <div className="fungi-card-wrapper">
                     <div className="card-container">
-                        <Link to="/basidiomycota" className="card-img-top" alt="Basidiomycota">
+                        <Link to="/basidiomycota" className="text-decoration-none" alt="Basidiomycota">
                         <div className="card h-100 shadow-sm fungi-card">
                             <img src={basidiomycota} className="card-img-top" alt="Basidiomycota" />
                             <div className="card-body">
@@ -94,7 +94,7 @@ const Fungi = () => {
 
                 <div className="fungi-card-wrapper">
                     <div className="card-container">
-                        <Link to="/deuteromycota" className='card-img-top' alt="Deuteromycota">
+                        <Link to="/deuteromycota" className='text-decoration-none' alt="Deuteromycota">
                         <div className="card h-100 shadow-sm fungi-card">
                             <img src={deuteromycota} className="card-img-top" alt="Deuteromycota" />
                             <div className="card-body">
@@ -111,7 +111,7 @@ const Fungi = () => {
                 <div className="mb-3">
                 <h4>Struktur Tubuh Fungi</h4>
                 <div className="struktur-fungi">
-                <img src={StrukturFungi} className/>
+                <img src={StrukturFungi} className="img-fluid" alt="Struktur Tubuh Fungi" />
                 <ul>
                     <li>Pada dasarnya, struktur jamur terbentuk dari komponen disebut hifa. Hifa sendiri adalah struktur menyerupai benang halus yang tersusun dari dinding berbentuk pipa. Dinding ini menyelubungi membran plasma dan sitoplasma hifa yang mengandung organel eukariotik. Kebanyakan hifa jamur dibatasi oleh dinding melintang atau septa.
                     Septa pada jamur memiliki pori besar yang cukup untuk dilewati ribosom, mitokondria, dan inti sel yang mengalir dari sel ke sel. Namun, ada pula hifa jamur yang tidak bersepta atau hifa senositik. Secara umum, struktur jamur hifa senositik dihasilkan oleh pembelahan inti sel berkali-kali yang tidak diikuti dengan pembelahan sitoplasma.

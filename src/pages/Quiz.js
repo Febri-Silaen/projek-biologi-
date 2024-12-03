@@ -466,13 +466,13 @@ const quizData = [
       },
 
       {
-        text: 'Fungi umumnya hidup sebagai...',
+        text: 'Bagaimana fungi mendapatkan nutrisi dari lingkungannya?',
 
         options: [
-          'Produsen',
-          'Konsumenl',
-          'Saprofit atau parasit',
-          'Dekomposer primer'
+          'Menyerap cahaya matahari melalui klorofil.',
+          'Mencerna makanan di luar tubuh dan menyerap molekul nutrisi ke dalam sel.',
+          'Menggunakan akar untuk menyerap nutrisi dari tanah.',
+          'Melakukan simbiosis dengan hewan.'
         ],
         correctAnswer: 2
       },
