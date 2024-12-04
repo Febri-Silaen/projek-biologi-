@@ -17,9 +17,7 @@ import Ascomycota from './pages/klasifikasi/Ascomycota';
 import Basidiomycota from './pages/klasifikasi/Basidiomycota';
 import Deuteromycota from './pages/klasifikasi/Deuteromycota';
 
-import Pteridophyta from './pages/klasifikasi/Pteridophyta';
-import Bryophyta from "./pages/klasifikasi//Bryophyta";
-import Spermatophyta from "./pages/klasifikasi/Spermatophyta";
+
 
 import Protista from './pages/Protista';
 import Fungi from './pages/Fungi';
@@ -54,9 +52,7 @@ function App() {
             <Route path="/basidiomycota" element={<Basidiomycota/>}/>
             <Route path="/deuteromycota" element={<Deuteromycota/>}/>
             <Route path="/ascomycota" element={<Ascomycota/>}/>
-            <Route path="/pteridophyta" element={<Pteridophyta />} />
-            <Route path="/bryophyta" element={<Bryophyta />} />
-            <Route path="/spermatophyta" element={<Spermatophyta />} />
+           
            
           </Routes>
         </main>

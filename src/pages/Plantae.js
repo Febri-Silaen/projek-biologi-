@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import '../styles/Plantae.css';
+
 
 const Plantae = () => {
   return (

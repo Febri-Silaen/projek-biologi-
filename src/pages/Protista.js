@@ -1,9 +1,15 @@
 import React from 'react';
+<<<<<<< Updated upstream
 import { Container, Row, Col, Card, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './styles/Protista.css';
 
 const KingdomProtista = () => {
+=======
+import { Container, Row, Col, Card, Image, Accordion } from 'react-bootstrap';
+
+const Protista = () => {
+>>>>>>> Stashed changes
   return (
     <Container className="my-5">
       <h1 className="text-center mb-4">Kingdom Protista</h1>

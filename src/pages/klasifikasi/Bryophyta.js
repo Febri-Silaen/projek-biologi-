@@ -1,13 +1,13 @@
 import React from "react";
 import { Card, Row, Col } from "react-bootstrap";
-import '../../styles/Pteridophyta.css';
+
 
 const Bryophyta = () => {
   return (
     <section className="bryophyta-section">
       <h1 className="text-center mb-4">Bryophyta (Tumbuhan Lumut)</h1>
       <Row className="gy-4 align-items-center">
-        {/* Deskripsi */}
+       
         <Col md={6}>
           <div className="description">
             <h2>Apa itu Bryophyta?</h2>
