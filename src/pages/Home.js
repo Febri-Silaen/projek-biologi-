@@ -38,12 +38,21 @@ const Home = () => {
     },
 
     {
+      title: 'Fungi',
+      description: 'jelajahi materi fungsi disini',
+      imageUrl: '/images/fungi-bg.jpg',
+      link: './fungi',
+      color: 'orange'
+    },
+    {
       title: 'Test Pengetahuan',
       description: 'Uji sejauh mana kemampuan kamu setelah belajar materi diwebsite ini',
       imageUrl: '/images/test.png',
       link: './Quiz',
       color: '#78B3CE'
-    }
+    },
+
+  
 
   ];
 

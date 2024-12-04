@@ -35,12 +35,21 @@ function Virus() {
         <p><strong>d. Wendell Meredith Stanley.</strong> Pada tahun 1935, Wendell Meredith Stanley, seorang ilmuwan Amerika berhasil mengkristalkan partikel penyebab penyakit pada tanaman tembakau. Penyakit ini kemudian dikenal dengan nama Tobacco Mosaic Virus (TMV).</p>
       </div>  
 
+      <div className="del1">
+        <h2 className="isi1">Ciri-ciri Virus</h2>
+        <p>a. Virus berukuran sangat kecil,berkisar 0,02-0,3 µm (1 µm = 1/1.000 mm), dan paling besar berukuran 200 µm, karena itu virus hanya dapat dilihat dengan mikroskop elektron. </p>
+        <p>b. Tubuh virus terdiri atas selubung proton (kapsid), dan bahan inti. Bahan inti berupa RNA (Ribonucleic acid) dan DNA (Deoxiribonucleic acid). </p>
+        <p>c. Virus tidak mempunyai membran dan organel-organel sel yang penting bagi kehidupan. </p>
+        <p>d. Virus hanya dapat bereproduksi jika berada dalam sel hidup atau jaringan hidup. </p>
+        <p>e. Virus dapat dikristalkan seperti benda mati. Bentuk virus bermacam-macam ada yang berbentuk batang, bola atau bulat, berbetuk peluru, dan lain-lain </p>
+        <p>f. Aktivitas virus dapat dihilangkan oleh sinar ultra ungu dan sinar X tetapi zat antibiotik dan zat antibakteri lain tidak berpengaruh terhadapnya.</p>
+        <p>g. Biasanya stabil pada pH 5.0 sampai 9.0. </p>
+      </div>  
 
-      
 
-
+    
     </div>
   );
 }
 
-export default Virus;
+export default Virus;
