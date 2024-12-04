@@ -12,10 +12,21 @@ const Login = () => {
 
   const navigate = useNavigate();
 
+  
+  
+  const isValidEmail = (email) => {
+    return email.includes('@') && email.endsWith('@gmail.com');
+  };
+
   const handleLogin = (e) => {
     e.preventDefault();
  
     if (email && password) {
+      
+      if (!isValidEmail(email)) {
+        alert('Email harus menggunakan @gmail.com');
+        return;
+      }
       navigate('/keanekaragaman');
     } else {
       alert('Mohon masukkan password dan email anda');
@@ -27,6 +38,12 @@ const Login = () => {
     
     if (password !== confirmPassword) {
       alert('Kata sandi tidak cocok');
+      return;
+    }
+
+    
+    if (!isValidEmail(email)) {
+      alert('Email harus menggunakan @gmail.com');
       return;
     }
 
@@ -173,7 +190,7 @@ const Login = () => {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />
-                  <span>Password</span>
+                  <span>Sandi</span>
                 </label>
                 <label>
                   <input 
@@ -184,7 +201,7 @@ const Login = () => {
                     value={confirmPassword}
                     onChange={(e) => setConfirmPassword(e.target.value)}
                   />
-                  <span>Konfirmasi Password</span>
+                  <span>Konfirmasi Sandi</span>
                 </label>
                 <button type="submit" className="submit">Daftar</button>
                 <p className="signin">

@@ -1,128 +1,173 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
+
+
 import zygomta1 from '../assets/images/zygomta1.jpg';
 import ascomycota from '../assets/images/ascomycota.jpeg';
 import basidiomycota from '../assets/images/basidiomycota.jpg';
 import deuteromycota from '../assets/images/deuteromycota.jpg';
 import StrukturFungi from '../assets/images/StrukturFungi.png';
+
 import '../styles/Fungi.css';
-import { Link } from 'react-router-dom';
+
+const FungiCard = ({ image, title, description, link }) => {
+    return (
+        <motion.div 
+            className="fungi-card"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+        >
+            <Link to={link} className="card-link">
+                <div className="card-image">
+                    <img src={image} alt={title} />
+                </div>
+                <div className="card-content">
+                    <h3>{title}</h3>
+                    <p>{description}</p>
+                    <span className="card-link-text">Pelajari Lebih Lanjut</span>
+                </div>
+            </Link>
+        </motion.div>
+    );
+};
 
 const Fungi = () => {
-    return (
-        <div className="container my-5">
-            <h2 className="fungi-header animate-text text-center mb-4">Fungi</h2>
+    const [activeSection, setActiveSection] = useState('definisi');
 
-            <div className="mb-5">
-                <h4>Definisi Fungi</h4>
+    const fungiTypes = [
+        {
+            image: zygomta1,
+            title: 'Zygomycota',
+            link: '/zygomycota',
+            description: 'Jamur dengan reproduksi zigospora unik'
+        },
+        {
+            image: ascomycota,
+            title: 'Ascomycota',
+            link: '/ascomycota',
+            description: 'Jamur kantung dengan karakteristik istimewa'
+        },
+        {
+            image: basidiomycota,
+            title: 'Basidiomycota',
+            link: '/basidiomycota',
+            description: 'Jamur payung dengan struktur menarik'
+        },
+        {
+            image: deuteromycota,
+            title: 'Deuteromycota',
+            link: '/deuteromycota',
+            description: 'Jamur tidak sempurna dengan misteri reproduksi'
+        }
+    ];
+
+    const sectionContent = {
+        definisi: (
+            <div className="section-content">
+                <h2>Definisi Fungi</h2>
                 <p>
-                    “Fungi” merupakan Bahasa latin dari kata Jamur. Jamur atau fungi merupakan tanaman yang bersifat eukariotik heterotrof dan tidak berklorofil. 
-                    Jamur bersifat eukariotik heterotrof yang artinya mendapatkan nutrisi dari bahan organik di lingkungan mereka hidup. 
-                    Fungi memiliki kemampuan untuk mencerna makanan di luar tubuh mereka dan kemudian menyerap molekul nutrisi ke dalam sel-selnya.
-                    Kata  jamur berasal dari kata latin yakni fungi.  Jamur (fungi) bereproduksi secara aseksual yang menghasilkan spora, kuncup, dan fragmentasi. 
-                    Sedangkan dengan cara seksual pada zigospora, askospora, dan basidiospora. Jamur (fungi) hidup di tempat-tempat yang lembap, air laut, air tawar, 
-                    tempat yang asam dan bersimbosis dengan ganggang hingga kemudian membentuk lumut (lichenes). Menurut Gandjar (2006) jamur atau fungi adalah sel 
-                    eukariotik yang tidak memiliki klorofil, tumbuh sebagai hifa, memiliki dinding sel yang mengandung kitin, bersifat heterotrof, menyerap nutrien
-                    melalui dinding selnya, mengekskresikan enzim ekstraselular ke lingkungan melalui spora, dan melakukan reproduksi secara seksual dan aseksual. 
-                    Sementara menurut Campbell (2003) Fungi adalah eukariota, dan sebagian besarnya merupakan eukariota multiseluler. Meskipun fungi pernah dikelompokkan 
-                    ke dalam kingdom tumbuhan, fungi adalah organisme unik yang umumnya berbeda dari eukariota lainnya ditinjau dari caranya memperoleh makanan, organisasi 
-                    struktural, pertumbuhan dan cara bereproduksi.
+                    Fungi adalah organisme eukariotik unik yang tidak berklorofil, 
+                    berperan penting dalam ekosistem sebagai pengurai dan simbiosis. 
+                    Mereka memiliki struktur sel khusus dan cara reproduksi yang kompleks.
                 </p>
+                <div className="fungi-highlights">
+                    <div className="highlight-item">
+                       
+                        <h4>Struktur Mikroskopis</h4>
+                        <p>Tersusun dari hifa dengan dinding sel kitin</p>
+                    </div>
+                    <div className="highlight-item">
+                       
+                        <h4>Peranan Ekologis</h4>
+                        <p>Berperan dalam daur ulang nutrisi alam</p>
+                    </div>
+                    <div className="highlight-item">
+                       
+                        <h4>Reproduksi Kompleks</h4>
+                        <p>Berkembang biak secara seksual dan aseksual</p>
+                    </div>
+                </div>
             </div>
-
-            <div className="mb-4">
-                <h4>Ciri-ciri Umum Fungi</h4>
-                <ul>
-                    <li>Fungi bersifat eukariotik, yaitu memiliki inti sel yang terbungkus membran.</li>
-                    <li>Fungi tidak memiliki klorofil sehingga tidak dapat melakukan fotosintesis (heterotrof).</li>
-                    <li>Memiliki dinding sel yang terbuat dari kitin, bukan selulosa seperti pada tumbuhan.</li>
-                    <li>Umumnya hidup sebagai saprofit (menguraikan bahan organik mati) atau parasit.</li>
-                    <li>Reproduksi dapat berlangsung secara seksual dan aseksual dengan membentuk spora.</li>
-                    <li>Hifa merupakan struktur dasar fungi, yang dapat bersekat (septat) atau tidak bersekat (aseptat).</li>
-                    <li>Mampu mencerna makanan di luar tubuh melalui sekresi enzim ekstraseluler.</li>
-                    <li>Dapat hidup di berbagai lingkungan, termasuk di tanah, air, dan sebagai parasit pada makhluk hidup lain.</li>
+        ),
+        ciri: (
+            <div className="section-content">
+                <h2>Ciri-ciri Khusus Fungi</h2>
+                <ul className="feature-list">
+                    <li>Sel eukariotik tanpa klorofil</li>
+                    <li>Dinding sel tersusun dari kitin</li>
+                    <li>Reproduksi melalui spora</li>
+                    <li>Hidup sebagai saprofit atau parasit</li>
+                    <li>Memiliki struktur hifa kompleks</li>
                 </ul>
             </div>
-
-            <div className="row">
-                <div className="fungi-card-wrapper">
-                    <div className="card-container">
-                        <Link to="/zygomycota" className="text-decoration-none">
-                        <div className="card h-100 shadow-sm fungi-card">
-                            <img src={zygomta1} className="card-img-top" alt="Zygomycota" />
-                            <div className="card-body">
-                                <h5 className="card-title">Zygomycota</h5>
-                                <p className="card-text">
-                                    Zygomycota membentuk spora istirahat berdinding tebal yang disebut zigospora. Memiliki hifa tidak bersekat dan menghasilkan zigospora sebagai spora seksual.
-                                </p>
-                            </div>
-                        </div>
-                        </Link>
+        ),
+        struktur: (
+            <div className="section-content">
+                <h2>Struktur Tubuh Fungi</h2>
+                <div className="struktur-container">
+                    <img src={StrukturFungi} alt="Struktur Fungi" />
+                    <div className="struktur-description">
+                        <p>
+                            Struktur fungi terdiri dari hifa, struktur benang halus 
+                            yang membentuk miselium. Hifa dapat bersekat atau tidak bersekat, 
+                            dengan kemampuan menyerap nutrisi dari lingkungan.
+                        </p>
                     </div>
                 </div>
-
-                <div className="fungi-card-wrapper">
-                    <div className="card-container">
-                        <Link to="/ascomycota" className="text-decoration-none" alt="Ascomycota">
-                        <div className="card h-100 shadow-sm fungi-card">
-                            <img src={ascomycota} className="card-img-top" alt="Ascomycota" />
-                            <div className="card-body">
-                                <h5 className="card-title">Ascomycota</h5>
-                                <p className="card-text">
-                                    Ascomycota dikenal sebagai jamur kantung, menghasilkan askospora dalam askus. Hifanya bersekat dengan inti tunggal.
-                                </p>
-                            </div>
-                        </div>
-                        </Link>
-                    </div>
-                </div>
-
-                <div className="fungi-card-wrapper">
-                    <div className="card-container">
-                        <Link to="/basidiomycota" className="text-decoration-none" alt="Basidiomycota">
-                        <div className="card h-100 shadow-sm fungi-card">
-                            <img src={basidiomycota} className="card-img-top" alt="Basidiomycota" />
-                            <div className="card-body">
-                                <h5 className="card-title">Basidiomycota</h5>
-                                <p className="card-text">
-                                    Basidiomycota memiliki bentuk seperti payung dan bereproduksi dengan membentuk spora pada basidium.
-                                </p>
-                            </div>
-                        </div>
-                        </Link>
-                    </div>
-                </div>
-
-                <div className="fungi-card-wrapper">
-                    <div className="card-container">
-                        <Link to="/deuteromycota" className='text-decoration-none' alt="Deuteromycota">
-                        <div className="card h-100 shadow-sm fungi-card">
-                            <img src={deuteromycota} className="card-img-top" alt="Deuteromycota" />
-                            <div className="card-body">
-                                <h5 className="card-title">Deuteromycota</h5>
-                                <p className="card-text">
-                                    Deuteromycota (jamur tidak sempurna) adalah kelompok fungi yang belum diketahui cara reproduksi seksualnya.
-                                </p>
-                            </div>
-                        </div>
-                        </Link>
-                    </div>
-                </div>
-
-                <div className="mb-3">
-                <h4>Struktur Tubuh Fungi</h4>
-                <div className="struktur-fungi">
-                <img src={StrukturFungi} className="img-fluid" alt="Struktur Tubuh Fungi" />
-                <ul>
-                    <li>Pada dasarnya, struktur jamur terbentuk dari komponen disebut hifa. Hifa sendiri adalah struktur menyerupai benang halus yang tersusun dari dinding berbentuk pipa. Dinding ini menyelubungi membran plasma dan sitoplasma hifa yang mengandung organel eukariotik. Kebanyakan hifa jamur dibatasi oleh dinding melintang atau septa.
-                    Septa pada jamur memiliki pori besar yang cukup untuk dilewati ribosom, mitokondria, dan inti sel yang mengalir dari sel ke sel. Namun, ada pula hifa jamur yang tidak bersepta atau hifa senositik. Secara umum, struktur jamur hifa senositik dihasilkan oleh pembelahan inti sel berkali-kali yang tidak diikuti dengan pembelahan sitoplasma.
-                    </li>
-                </ul>
             </div>
+        )
+    };
+
+    return (
+        <motion.div 
+            className="fungi-page"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+        >
+            <div className="fungi-header">
+                <h1>Dunia Fascinating Fungi</h1>
+                <p>Menjelajahi Keunikan Dunia Jamur</p>
             </div>
 
+            <div className="section-navigator">
+                <button 
+                    className={activeSection === 'definisi' ? 'active' : ''}
+                    onClick={() => setActiveSection('definisi')}
+                >
+                    Definisi
+                </button>
+                <button 
+                    className={activeSection === 'ciri' ? 'active' : ''}
+                    onClick={() => setActiveSection('ciri')}
+                >
+                    Ciri-ciri
+                </button>
+                <button 
+                    className={activeSection === 'struktur' ? 'active' : ''}
+                    onClick={() => setActiveSection('struktur')}
+                >
+                    Struktur
+                </button>
             </div>
-        </div>
+
+            <div className="main-content">
+                {sectionContent[activeSection]}
+            </div>
+
+            <div className="fungi-classification">
+                <h2>Klasifikasi Fungi</h2>
+                <div className="fungi-grid">
+                    {fungiTypes.map((fungi, index) => (
+                        <FungiCard key={index} {...fungi} />
+                    ))}
+                </div>
+            </div>
+        </motion.div>
     );
 };
 
 export default Fungi;
+
