@@ -14,7 +14,10 @@ import Animalia from './pages/Animalia';
 import Quiz from './pages/Quiz';
 import Login from './components/Login';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Zygomycota from './pages/Zygomycota';
+import Zygomycota from './pages/klasifikasi/Zygomycota';
+import Ascomycota from './pages/klasifikasi/Ascomycota';
+import Basidiomycota from './pages/klasifikasi/Basidiomycota';
+import Deuteromycota from './pages/klasifikasi/Deuteromycota'; 
 
 
 
@@ -39,7 +42,10 @@ function App() {
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/login" element={<Login />} />
             <Route path="/zygomycota" element={<Zygomycota />}/>
-           
+            <Route path="/ascomycota" element={<Ascomycota/>}/>
+            <Route path="/basidiomycota" element={<Basidiomycota/>}/>
+            <Route path="/deuteromycota" element={<Deuteromycota/>} />
+
             
            
 
