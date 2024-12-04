@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 .custom-logo {
@@ -66,8 +66,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: 5%;
-  margin-right: 3px;
+  margin-left: 3%;
+  margin-right: 2px;
 }
 
 .nav-item {
@@ -225,5 +225,6 @@
 }
 
 .nav-link {
-  animation: slideIn 0.3s ease;
+  animation: slideIn 0.3s ease;
 }
+

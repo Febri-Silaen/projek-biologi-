@@ -46,7 +46,7 @@ const Home = () => {
     {
       title: 'Test Pengetahuan',
       description: 'Uji sejauh mana kemampuan kamu setelah belajar materi diwebsite ini',
-      imageUrl: '/images/quiz.png',
+      imageUrl: '/images/test.png',
       link: './Quiz',
       color: '#78B3CE'
     }
@@ -156,5 +156,4 @@ const Home = () => {
   );
 };
 
-export default Home;
-
+export default Home;

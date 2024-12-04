@@ -3,9 +3,6 @@ import '../styles/Keanekaragaman.css';
 import { Accordion, Card, Button, Badge } from 'react-bootstrap';
 
 
-
-
-
 function Keanekaragaman() {
    const [activeTab, setActiveTab] = useState('global');
 
@@ -257,7 +254,7 @@ function Keanekaragaman() {
             </Card.Text>
             <Button 
               variant="primary" 
-              href="./materi/materi2.pdf"
+              href="./materi/materi.pdf"
               download
             >
               Unduh PDF
@@ -276,7 +273,7 @@ function Keanekaragaman() {
             </Card.Text>
             <Button 
               variant="success" 
-              href="./materi/materi3.pdf" 
+              href="../materi/ekosistem-konservasi.pdf" 
               download
             >
               Unduh PDF
@@ -331,4 +328,4 @@ function Keanekaragaman() {
   );
 }
 
-export default Keanekaragaman;
+export default Keanekaragaman;

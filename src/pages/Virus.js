@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../pages/Virus.css';
+import '../styles/Virus.css';
 
 function Virus() {
   return (
@@ -69,4 +69,4 @@ function Virus() {
   );
 }
 
-export default Virus;
+export default Virus;

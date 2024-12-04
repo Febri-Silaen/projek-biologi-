@@ -80,7 +80,7 @@
     margin-bottom: 15px;
   }
   
-  /*gambar fungi*/
+  
   .struktur-fungi img {
     display: block;
     max-width: 60%; 
@@ -104,7 +104,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  /*hover*/
+  
   .struktur-fungi li:hover {
     background-color: #b66755;
     transition: background-color 0.3s ease;
@@ -143,10 +143,10 @@
     }
 }
 
-/*ini untuk responsif layar kecil*/
+
 @media (max-width: 768px) {
     .fungi-card-wrapper {
         flex: 0 0 100%;
         max-width: 100%;
-    }
+}
 }

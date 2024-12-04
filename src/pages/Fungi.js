@@ -125,4 +125,4 @@ const Fungi = () => {
     );
 };
 
-export default Fungi;
+export default Fungi;

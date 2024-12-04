@@ -809,20 +809,21 @@ const Quiz = () => {
 
   const renderQuizContent = () => {
     if (showScore) {
+      const totalQuestions = quizData.find(cat => cat.category === currentCategory).questions.length;
       return (
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           className="score-section"
         >
-          <h2>Skor Anda: {score} dari {quizData.find(cat => cat.category === currentCategory).questions.length}</h2>
+          <h2>Skor Anda: {score} dari {totalQuestions}</h2>
           
           <div className="score-progress">
             <div 
               className="score-bar" 
               style={{ 
-                width: `${(score / quizData.find(cat => cat.category === currentCategory).questions.length) * 100}%`,
-                backgroundColor: score === quizData.find(cat => cat.category === currentCategory).questions.length 
+                width: `${(score / totalQuestions) * 100}%`,
+                backgroundColor: score === totalQuestions 
                   ? '#4CAF50' 
                   : '#2196F3'
               }}
@@ -830,9 +831,9 @@ const Quiz = () => {
           </div>
 
           <div className="score-feedback">
-            {score === quizData.find(cat => cat.category === currentCategory).questions.length 
+            {score === totalQuestions 
               ? "🌟 Sempurna! Kamu menguasai materi dengan baik!" 
-              : score > quizData.find(cat => cat.category === currentCategory).questions.length / 2
+              : score > totalQuestions / 2
                 ? "👍 Bagus! Kamu sudah memahami sebagian besar materi."
                 : "📖 Ayo belajar lagi! Kamu bisa tingkatkan pemahamanmu."}
           </div>
@@ -921,5 +922,3 @@ const Quiz = () => {
 };
 
 export default Quiz;
-
-
