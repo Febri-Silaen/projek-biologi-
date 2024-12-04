@@ -254,7 +254,7 @@ function Keanekaragaman() {
             </Card.Text>
             <Button 
               variant="primary" 
-              href="./materi/materi.pdf"
+              href="./materi3/materi.pdf"
               download
             >
               Unduh PDF
@@ -273,7 +273,7 @@ function Keanekaragaman() {
             </Card.Text>
             <Button 
               variant="success" 
-              href="../materi/ekosistem-konservasi.pdf" 
+              href="./materi3/materi.pdf" 
               download
             >
               Unduh PDF
@@ -292,7 +292,7 @@ function Keanekaragaman() {
             </Card.Text>
             <Button 
               variant="info" 
-              href="/materi/presentasi-biodiversitas.pptx" 
+              href="./materi2/materi.pdf" 
               download
             >
               Unduh Presentasi
@@ -312,10 +312,7 @@ function Keanekaragaman() {
               dan dapat digunakan untuk kepentingan edukasi. Mohon 
               mencantumkan sumber apabila menggunakan materi ini.
             </p>
-            <div className="download-stats">
-              <Badge bg="primary" className="mx-2">Total Unduhan: 5,234</Badge>
-              <Badge bg="success" className="mx-2">Terakhir Diperbarui: Juli 2024</Badge>
-            </div>
+            
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>

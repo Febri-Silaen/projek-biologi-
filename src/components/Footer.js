@@ -42,10 +42,10 @@ const Footer = () => {
         <div className="footer-section">
           <h4 className="footer-subtitle">Halaman</h4>
           <ul className="footer-links">
-            <li><Link to="/ruang-lingkup">Ruang Lingkup</Link></li>
+            
             <li><Link to="/keanekaragaman">Keanekaragaman</Link></li>
             <li><Link to="/virus">Virus</Link></li>
-            <li><Link to="/protista">Protista</Link></li>
+            
             <li><Link to="/fungi">Fungi</Link></li>
             <li><Link to="/plantae">Plantae</Link></li>
             <li><Link to="/animalia">Animalia</Link></li>

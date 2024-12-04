@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import RuangLingkup from './pages/RuangLingkup';
 import Keanekaragaman from './pages/Keanekaragaman';
 import Virus from './pages/Virus';
-import Protista from './pages/Protista';
+
 import Fungi from './pages/Fungi';
 import Plantae from './pages/Plantae';
 import Animalia from './pages/Animalia';
@@ -35,7 +35,7 @@ function App() {
             <Route path="/ruang-lingkup" element={<RuangLingkup />} />
             <Route path="/keanekaragaman" element={<Keanekaragaman />} />
             <Route path="/virus" element={<Virus />} />
-            <Route path="/protista" element={<Protista />} />
+           
             <Route path="/fungi" element={<Fungi />} />
             <Route path="/plantae" element={<Plantae />} />
             <Route path="/Animalia" element={<Animalia />} />

@@ -32,11 +32,7 @@ const Navbar = () => {
       label: 'Virus',
       icon: '🦠'
     },
-    { 
-      path: '/protista', 
-      label: 'Protista',
-      icon: '🔬'
-    },
+   
     { 
       path: '/fungi', 
       label: 'Fungi',

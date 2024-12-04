@@ -28,13 +28,7 @@ const Home = () => {
       link: './plantae',
       color: '#1F4529'
     },
-    {
-      title: 'Protista',
-      description: 'Eksplorasi materi mengenai protista',
-      imageUrl: '/images/protista.jpeg',
-      link: './protista',
-      color: '#4C1F7A'
-    },
+    
     {
       title: 'Animalia',
       description: 'Eksplorasi materi mengenai Animalia',

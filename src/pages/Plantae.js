@@ -7,7 +7,7 @@ const Plantae = () => {
     <section>
       <h1 className="text-center my-4">Kingdom Plantae</h1>
       <Row className="align-items-center">
-        {/* Bagian Kiri: Deskripsi */}
+        
         <Col md={6}>
           <div>
           <h1>Kingdom Plantae</h1>
@@ -34,7 +34,7 @@ const Plantae = () => {
         Ajar Kultur Jaringan Tumbuhan*, kamu dapat mempelajari mengenai kultur
         jaringan tumbuhan.
       </p>
-            <h2>Ciri-Ciri Kingdom Plantae</h2>
+            <h2 className="paragraf">Ciri-Ciri Kingdom Plantae</h2>
             <ul>
               <li>Multiseluler atau mempunyai banyak sel</li>
               <li>Autotrof, bisa membuat makanan sendiri</li>
