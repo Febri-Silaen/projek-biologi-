@@ -1,230 +1,93 @@
-.hero-section2 {
-  display: flex;
-  align-items: center;
-  min-height: 35vh;
-  width: 100%;
-  padding: 60px 0;
-  background-image: url('../../public/images/virus.background.jpg');
-  border-radius: 20px;
-  margin-bottom: 5px;
-
-}
-.container{
-  text-align: center;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
+.virus-page {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.display-4{
-  font-size: 50px;
-  
-}
-
-.judul{
-  font-size: 35px;
-  color: white;
-}
-  
-  .card-wrapper::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120%;
-    height: 120%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, transparent 70%);
-    z-index: -1;
-    animation: pulsate 3s infinite;
-  }
-  
-  .text-description {
-    font-size: 20px;
-    line-height: 1.6;
-    color: black;
-    animation: fadeIn 2s ease-in;
-  }
-  
-  /* Wrapper styling */
-  .card-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px; /* Jarak antar card */
-    padding: 10px;
-    background-color: #f9f9f9; /* Warna latar */
-  }
-  
-  /* Card styling */
-  .card-container {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px; /* Ukuran konsisten untuk semua card */
-    height: 350px; /* Tinggi konsisten untuk semua card */
+.virus-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
     text-align: center;
-    padding: 15px;
+    padding: 3rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.section-navigator {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section-navigator button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background-color: #e0e6ed;
+    color: var(--text-color);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.section-navigator button.active {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.timeline {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Agar konten merata di dalam card */
-    transition: transform 0.3s ease;
-  }
-  
-  .card-container:hover {
-    transform: scale(1.05); /* Efek hover */
-  }
-  
-  /* Card image */
-  .card-img {
-    width: 100%;
-    height: 170px; /* Tinggi gambar tetap */
-    object-fit: cover; /* Menyesuaikan gambar agar tidak terpotong */
-    border-radius: 10px;
-  }
-  
-  /* Title styling */
-  .card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  /* Description styling */
-  .card-description {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 15px;
-    flex-grow: 1; /* Agar description memenuhi ruang kosong */
-  }
-  
-  /* Button styling */
-  .card-btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .card-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .isi1{
-    margin-top: 20px;
-  }
-  
-  h6 {
-    animation: slideDown 1.5s ease-out;
-    font-size: 18px;
-  }
+    gap: 1.5rem;
+    padding: 1rem;
+}
 
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #fff;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    animation: fadeIn 1.5s ease-out;
-  }
-  
-  h2.isi1 {
-    font-size: 2.5rem;
+.timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.timeline-icon {
+    background-color: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.virus-characteristics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.characteristic-card {
+    background-color: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 15px;
     text-align: center;
-    color: black;
-    animation: fadeIn 2s ease-in-out;
-    margin-top: 0px;
-  }
-
-  .del1 p{
-    margin: 20px 0;
-    padding: 15px;
-    background: #fff;
-    border-left: 6px solid #007BFF;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-    animation: slideIn 1.5s ease-in-out;
-  }
-
-  strong {
-    color: #4A628A;
-  }
-  
-  /* Animasi */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateX(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes fadeBg {
-    from {
-      opacity: 0.2;
-    }
-    to {
-      opacity: 0.4;
-    }
-  }
-  
-  
-  /* Animasi */
-  @keyframes fadeInScale {
-    from {
-      opacity: 0;
-      transform: scale(0.8);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
-  @keyframes slideDown {
-    from {
-      transform: translateY(-20px);
-      opacity: 0;
-     }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-     }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes pulsate {
-    0%, 100% {
-      transform: translateX(-50%) scale(1);
-    }
-    50% {
-      transform: translateX(-50%) scale(1.1);
+    box-shadow: 0 10px 25px var(--card-shadow);
+    transition: transform 0.3s ease;
 }
+
+.characteristic-card:hover {
+    transform: translateY(-10px);
 }
+
+.card-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
+import { FaGoogle } from 'react-icons/fa';
 
-  
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
@@ -13,65 +13,110 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  
-  
   const isValidEmail = (email) => {
-    return email.includes('@') && email.endsWith('@gmail.com');
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const isStrongPassword = (password) => {
+  
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+    return passwordRegex.test(password);
   };
 
   const handleLogin = (e) => {
     e.preventDefault();
  
-    if (email && password) {
-      
-      if (!isValidEmail(email)) {
-        alert('Email harus menggunakan @gmail.com');
-        return;
-      }
-      navigate('/keanekaragaman');
+    if (!email || !password) {
+      alert('Mohon masukkan email dan password Anda');
+      return;
+    }
+
+    if (!isValidEmail(email)) {
+      alert('Email yang Anda masukkan tidak valid');
+      return;
+    }
+
+    const users = JSON.parse(localStorage.getItem('registeredUsers') || '[]');
+    
+   
+    const user = users.find(
+      u => u.email === email && u.password === password
+    );
+
+    if (user) {
+    
+      alert('Login berhasil!');
+      navigate('/home');
     } else {
-      alert('Mohon masukkan password dan email anda');
+      alert('Email atau password salah. Silakan cek kembali.');
     }
   };
 
   const handleRegister = (e) => {
     e.preventDefault();
     
+    
+    if (!firstName || !lastName || !email || !password || !confirmPassword) {
+      alert('Harap isi semua kolom');
+      return;
+    }
+
+    if (!isValidEmail(email)) {
+      alert('Email yang Anda masukkan tidak valid');
+      return;
+    }
+
     if (password !== confirmPassword) {
-      alert('Kata sandi tidak cocok');
+      alert('Konfirmasi kata sandi tidak cocok');
+      return;
+    }
+
+    if (!isStrongPassword(password)) {
+      alert('Kata sandi harus minimal 8 karakter, mengandung huruf besar, huruf kecil, dan angka');
       return;
     }
 
     
-    if (!isValidEmail(email)) {
-      alert('Email harus menggunakan @gmail.com');
+    const users = JSON.parse(localStorage.getItem('registeredUsers') || '[]');
+
+    
+    const existingUser = users.find(u => u.email === email);
+    if (existingUser) {
+      alert('Email sudah terdaftar. Silakan gunakan email lain.');
       return;
     }
 
-    if (firstName && lastName && email && password) {
-     
-      setIsLogin(true);
-     
-      setFirstName('');
-      setLastName('');
-      setEmail('');
-      setPassword('');
-      setConfirmPassword('');
-      alert('Registrasi berhasil! Silahkan login.');
-    } else {
-      alert('Harap isi semua kolom');
-    }
+    
+    const newUser = {
+      firstName,
+      lastName,
+      email,
+      password
+    };
+
+    users.push(newUser);
+    localStorage.setItem('registeredUsers', JSON.stringify(users));
+
+
+    alert('Registrasi berhasil! Silahkan login.');
+    setIsLogin(true);
+    
+  
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setPassword('');
+    setConfirmPassword('');
   };
 
   const handleGoogleLogin = () => {
-    console.log('Google login initiated');
-    window.location.href = 'https://mail.google.com/mail/u/0/#inbox';
+    window.open('https://accounts.google.com/signin', '_blank');
   };
 
   return (
     <div className="login-container">
       <div className="login-content">
-     
         <div className="info-section">
           <h2>Selamat Datang di Website SiBisuk</h2>
           <p>
@@ -81,7 +126,6 @@ const Login = () => {
           </p>
         </div>
 
-       
         <div className="form-container">
           {isLogin ? (
             <>
@@ -104,12 +148,19 @@ const Login = () => {
                   required
                 />
                 <p className="page-link">
-                  <Link to="https://mail.google.com/mail/u/0/#inbox" className="page-link-label">Lupa password?</Link>
+                  <a 
+                    href="https://accounts.google.com/signin/recovery" 
+                    className="page-link-label" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    Lupa password?
+                  </a>
                 </p>
                 <button type="submit" className="form-btn">Log in</button>
               </form>
               <p className="sign-up-label">
-                Belum memiliki akun?
+                Belum memiliki akun?{' '}
                 <span 
                   className="sign-up-link" 
                   onClick={() => setIsLogin(false)}
@@ -119,22 +170,7 @@ const Login = () => {
               </p>
               <div className="buttons-container">
                 <div className="google-login-button" onClick={handleGoogleLogin}>
-                 
-                  <svg 
-                    stroke="currentColor" 
-                    fill="currentColor" 
-                    strokeWidth="0" 
-                    version="1.1" 
-                    x="0px" 
-                    y="0px" 
-                    className="google-icon" 
-                    viewBox="0 0 48 48" 
-                    height="1em" 
-                    width="1em" 
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                  
-                  </svg>
+                  <FaGoogle className="google-icon" />
                   <span>Login Menggunakan Akun Google</span>
                 </div>
               </div>
@@ -223,4 +259,5 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Login;
+

@@ -1,53 +1,98 @@
-import React from "react";
-import { Link } from "react-router-dom";
+
+import React, { useState } from "react";
+
 import '../styles/Virus.css';
 
+
 function Virus() {
-  return (
-    <div className="card-wrapper">
-      
-      <div className="hero-section2">
-        <div className="container">
-          <h1 className="display-4">Virus</h1>
-          <p className="judul">Memahami Defenisi dan jenis jenis virus</p>
+  const [activeSection, setActiveSection] = useState('sejarah');
+
+  const sections = [
+    { 
+      id: 'sejarah', 
+     
+      title: 'Sejarah Virus',
+      content: (
+        <div className="section-content">
+          <p>Perjalanan penemuan virus adalah kisah inspiratif dalam sains. Dari bintik kuning pada daun tembakau hingga pemahaman molekuler, ilmuwan besar telah mengungkap rahasia mikroorganisme misterius ini.</p>
+          
+          <div className="timeline">
+            <div className="timeline-item">
+              <div className="timeline-icon">1883</div>
+              <div className="timeline-content">
+                <h3>Adolf Meyer</h3>
+                <p>Pertama kali mengamati penyakit bintik kuning pada daun tembakau</p>
+              </div>
+            </div>
+            <div className="timeline-item">
+              <div className="timeline-icon">1892</div>
+              <div className="timeline-content">
+                <h3>Dmitri Ivanovsky</h3>
+                <p>Melakukan percobaan penyaringan dan menemukan agen penyakit mikroskopis</p>
+              </div>
+            </div>
+            <div className="timeline-item">
+              <div className="timeline-icon">1935</div>
+              <div className="timeline-content">
+                <h3>Wendell Meredith Stanley</h3>
+                <p>Berhasil mengkristalkan Tobacco Mosaic Virus (TMV)</p>
+              </div>
+            </div>
+          </div>
         </div>
+      )
+    },
+    { 
+      id: 'ciri', 
+     
+      title: 'Ciri-ciri Virus',
+      content: (
+        <div className="section-content">
+          <div className="virus-characteristics">
+            <div className="characteristic-card">
+             
+              <h4>Ukuran Mikroskopis</h4>
+              <p>Berukuran 0,02-0,3 µm, hanya dapat dilihat dengan mikroskop elektron</p>
+            </div>
+            <div className="characteristic-card">
+              
+              <h4>Struktur Genetik</h4>
+              <p>Terdiri dari selubung protein (kapsid) dan materi genetik RNA atau DNA</p>
+            </div>
+            <div className="characteristic-card">
+             
+              <h4>Reproduksi</h4>
+              <p>Hanya dapat bereproduksi di dalam sel atau jaringan hidup</p>
+            </div>
+          </div>
+        </div>
+      )
+    }
+  ];
+
+  return (
+    <div className="virus-page">
+      <div className="virus-header">
+        <h1>Dunia Virus</h1>
+        <p>Menjelajahi Mikroorganisme Misterius</p>
       </div>
 
-      <div className="des">
-      <p className="text-description">
-          Virus adalah salah satu makhluk mikroskopis paling menarik di dunia. Mereka bukan hanya ancaman, 
-          tapi juga kunci untuk memahami biologi dan inovasi teknologi. Temukan cerita di balik virus di sini!
-        </p></div>
+      <div className="section-navigator">
+        {sections.map(section => (
+          <button 
+            key={section.id}
+            className={activeSection === section.id ? 'active' : ''}
+            onClick={() => setActiveSection(section.id)}
+          >
+            {section.icon}
+            <span>{section.title}</span>
+          </button>
+        ))}
+      </div>
 
-        <div className="del1">
-        <h2 className="isi1">Sejarah Virus</h2>
-        <h5>Istilah virus berasal dari bahasa Latin,virion yang artinya racun. Sejarah penemuan virus dimulai pada tahun 1883 dengan 
-          ditemukannya penyakit yang menyebabkan adanya bintik-bintik kuning pada daun tembakau. 
-          Penyakit tersebut kemudian dikenal dengan istilah penyakit mosaik tembakau. Beberapa ilmuwan yang terlibat dalam penemuan virus adalah sebagai berikut :</h5>
-        <p><strong>a. Adolf Meyer.</strong>  Pada tahun 1883, Adolf Meyer, seorang ilmuwan Jerman mengamati penyakit yang menyebabkan adanya bintik-bintik kuning pada daun tembakau. Meyer kemudian melakukan percobaan dengan menyemprotkan getah yang diekstraksi dari tanaman tembakau yang sakit ke tanaman tembakau yang sehat. 
-        Ternyata, tanaman tembakau yang sehat menjadi sakit. Meyer kemudian mencoba mengamati daun tembakau yang sakit dengan menggunakan mikroskop biasa. Akan tetapi, ia tidak dapat menemukan bakteri yang diduga menjadi penyebab penyakit tersebut. Meyer kemudian menyimpulkan bahwa bakteri penyebab penyakit pada tanaman tembakau berukuran lebih kecil dari bakteri biasanya. </p>
-        <p><strong>b. Dmitri Ivanovsky.</strong>  Pada tahun 1892, Dmitri Ivanovsky, seorang ilmuwan Rusia melakukan percobaan dengan menyaring getah tanaman tembakau yang sakit dengan menggunakan saringan bakteri. 
-        Selanjutnya, hasil saringan tersebut ditularkan pada tanaman tembakau yang sehat. Ternyata, tanaman tembakau yang sehat tersebut menjadi sakit. Ivanovsky kemudian menyimpulkan bahwa penyebab penyakit pada tanaman tembakau adalah bakteri patogenik yang sangat kecil atau bakteri penghasil toksin yang dapat melewati saringan. </p>
-        <p><strong>c. Martinus Beijerinck.</strong> Pada tahun 1897, Martinus Beijerinck, seorang ilmuwan Belanda melakukan percobaan untuk membuktikan bahwa agen penyebab penyakit pada tanaman tembakau dapat berkembang biak. 
-        Beijerinck menyemprotkan getah tanaman yang sudah disaring ke tanaman yang sehat. Setelah tanaman yang sehat menjadi sakit, getah tanaman tersebut digunakan untuk menginfeksi tanaman berikutnya, dan seterusnya hingga beberapa kali pemindahan. Ternyata, melalui beberapa kali pemindahan, sifat patogennya tidak berkurang. 
-        Agen tersebut juga berbeda dengan bakteri, karena tidak dapat dikembangbiakkan di dalam cawan petri yang berisi nutrisi. Selain itu, juga tidak dapat dinonaktifkan menggunakan alkohol. 
-        Beijerinck kemudian menyimpulkan bahwa agen tersebut adalah partikel yang lebih kecil danlebih sederhana dari bakteri. Beijerinck kemudian menyebutnya sebagai virus lolos saring (filterable virus). </p>
-        <p><strong>d. Wendell Meredith Stanley.</strong> Pada tahun 1935, Wendell Meredith Stanley, seorang ilmuwan Amerika berhasil mengkristalkan partikel penyebab penyakit pada tanaman tembakau. Penyakit ini kemudian dikenal dengan nama Tobacco Mosaic Virus (TMV).</p>
-      </div>  
-
-      <div className="del1">
-        <h2 className="isi1">Ciri-ciri Virus</h2>
-        <p>a. Virus berukuran sangat kecil,berkisar 0,02-0,3 µm (1 µm = 1/1.000 mm), dan paling besar berukuran 200 µm, karena itu virus hanya dapat dilihat dengan mikroskop elektron. </p>
-        <p>b. Tubuh virus terdiri atas selubung proton (kapsid), dan bahan inti. Bahan inti berupa RNA (Ribonucleic acid) dan DNA (Deoxiribonucleic acid). </p>
-        <p>c. Virus tidak mempunyai membran dan organel-organel sel yang penting bagi kehidupan. </p>
-        <p>d. Virus hanya dapat bereproduksi jika berada dalam sel hidup atau jaringan hidup. </p>
-        <p>e. Virus dapat dikristalkan seperti benda mati. Bentuk virus bermacam-macam ada yang berbentuk batang, bola atau bulat, berbetuk peluru, dan lain-lain </p>
-        <p>f. Aktivitas virus dapat dihilangkan oleh sinar ultra ungu dan sinar X tetapi zat antibiotik dan zat antibakteri lain tidak berpengaruh terhadapnya.</p>
-        <p>g. Biasanya stabil pada pH 5.0 sampai 9.0. </p>
-      </div>  
-
-
-    
+      <div className="main-content">
+        {sections.find(section => section.id === activeSection)?.content}
+      </div>
     </div>
   );
 }
