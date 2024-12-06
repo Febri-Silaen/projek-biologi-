@@ -8,7 +8,7 @@
 }
 
 .virus-header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background-image: url('../../public/images/virus.background.jpg');
     color: white;
     text-align: center;
     padding: 3rem;

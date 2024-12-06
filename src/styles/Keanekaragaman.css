@@ -13,7 +13,7 @@
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-/* Teknologi Konservasi */
+
 .tech-conservation {
   background-color: var(--background-light);
   border-radius: 10px;
@@ -40,7 +40,7 @@
   color: white;
 }
 
-/* Penelitian Ilmiah */
+
 .scientific-research {
   background-color: #f9f9f9;
   padding: 30px;
@@ -67,7 +67,6 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-/* Dampak Global */
 .global-impact {
   background-color: var(--primary-color);
   color: white;
@@ -89,7 +88,7 @@
   border-radius: 10px;
 }
 
-/* Edukasi Interaktif */
+
 .interactive-education {
   background-color: var(--background-light);
   padding: 30px;

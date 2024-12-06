@@ -1,8 +1,7 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-
-
 
 import zygomta1 from '../assets/images/zygomta1.jpg';
 import ascomycota from '../assets/images/ascomycota.jpeg';
@@ -41,25 +40,25 @@ const Fungi = () => {
             image: zygomta1,
             title: 'Zygomycota',
             link: '/zygomycota',
-            description: 'Jamur dengan reproduksi zigospora unik'
+            description: 'Jamur dengan reproduksi zigospora unik.'
         },
         {
             image: ascomycota,
             title: 'Ascomycota',
             link: '/ascomycota',
-            description: 'Jamur kantung dengan karakteristik istimewa'
+            description: 'Jamur kantung dengan karakteristik istimewa.'
         },
         {
             image: basidiomycota,
             title: 'Basidiomycota',
             link: '/basidiomycota',
-            description: 'Jamur payung dengan struktur menarik'
+            description: 'Jamur payung dengan struktur menarik.'
         },
         {
             image: deuteromycota,
             title: 'Deuteromycota',
             link: '/deuteromycota',
-            description: 'Jamur tidak sempurna dengan misteri reproduksi'
+            description: 'Jamur tidak sempurna dengan misteri reproduksi.'
         }
     ];
 
@@ -72,23 +71,12 @@ const Fungi = () => {
                     berperan penting dalam ekosistem sebagai pengurai dan simbiosis. 
                     Mereka memiliki struktur sel khusus dan cara reproduksi yang kompleks.
                 </p>
-                <div className="fungi-highlights">
-                    <div className="highlight-item">
-                       
-                        <h4>Struktur Mikroskopis</h4>
-                        <p>Tersusun dari hifa dengan dinding sel kitin</p>
-                    </div>
-                    <div className="highlight-item">
-                       
-                        <h4>Peranan Ekologis</h4>
-                        <p>Berperan dalam daur ulang nutrisi alam</p>
-                    </div>
-                    <div className="highlight-item">
-                       
-                        <h4>Reproduksi Kompleks</h4>
-                        <p>Berkembang biak secara seksual dan aseksual</p>
-                    </div>
-                </div>
+                <h4>Fakta Menarik:</h4>
+                <ul>
+                    <li>Fungi dapat ditemukan di hampir semua lingkungan, dari tanah hingga air.</li>
+                    <li>Beberapa fungi dapat memiliki efek psikoaktif.</li>
+                    <li>Fungi memiliki kemampuan untuk memecah bahan organik yang sulit, seperti kayu.</li>
+                </ul>
             </div>
         ),
         ciri: (
@@ -117,6 +105,19 @@ const Fungi = () => {
                     </div>
                 </div>
             </div>
+        ),
+        fungsi: (
+            <div className="section-content">
+                <h2>Fungsi Fungi dalam Ekosistem</h2>
+                <p>
+                    Fungi memiliki peranan yang sangat penting dalam ekosistem, termasuk:
+                </p>
+                <ul>
+                    <li>Pengurai: Membantu dalam penguraian bahan organik.</li>
+                    <li>Simbiosis: Berkontribusi dalam hubungan simbiosis dengan tanaman.</li>
+                    <li>Produksi: Beberapa fungi digunakan dalam produksi makanan dan obat-obatan.</li>
+                </ul>
+            </div>
         )
     };
 
@@ -128,7 +129,7 @@ const Fungi = () => {
             transition={{ duration: 0.5 }}
         >
             <div className="fungi-header">
-                <h1>Dunia Fascinating Fungi</h1>
+                <h1>Dunia  Fungi</h1>
                 <p>Menjelajahi Keunikan Dunia Jamur</p>
             </div>
 
@@ -151,6 +152,12 @@ const Fungi = () => {
                 >
                     Struktur
                 </button>
+                <button 
+                    className={activeSection === 'fungsi' ? 'active' : ''}
+                    onClick={() => setActiveSection('fungsi')}
+                >
+                    Fungsi
+                </button>
             </div>
 
             <div className="main-content">
@@ -169,5 +176,5 @@ const Fungi = () => {
     );
 };
 
-export default Fungi;
+export default Fungi;
 
