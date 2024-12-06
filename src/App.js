@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -18,6 +19,11 @@ import Ascomycota from './pages/klasifikasi/Ascomycota';
 import Basidiomycota from './pages/klasifikasi/Basidiomycota';
 import Deuteromycota from './pages/klasifikasi/Deuteromycota'; 
 
+
+
+
+
+
 function App() {
   return (
     <Router>
@@ -25,10 +31,11 @@ function App() {
         <Navbar />
         <main className="main-content">
           <Routes>
-            <Route path="/" element={<Login />} /> 
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
+          
             <Route path="/keanekaragaman" element={<Keanekaragaman />} />
             <Route path="/virus" element={<Virus />} />
+           
             <Route path="/fungi" element={<Fungi />} />
             <Route path="/plantae" element={<Plantae />} />
             <Route path="/Animalia" element={<Animalia />} />
@@ -38,6 +45,10 @@ function App() {
             <Route path="/ascomycota" element={<Ascomycota/>}/>
             <Route path="/basidiomycota" element={<Basidiomycota/>}/>
             <Route path="/deuteromycota" element={<Deuteromycota/>} />
+
+            
+           
+
           </Routes>
         </main>
         <Footer />
@@ -46,5 +57,4 @@ function App() {
   );
 }
 
-export default App;
-
+export default App;
