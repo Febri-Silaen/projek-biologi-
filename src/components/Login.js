@@ -1,4 +1,4 @@
-import React, { useState,} from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
 import { FaGoogle } from 'react-icons/fa';
@@ -19,7 +19,6 @@ const Login = () => {
   };
 
   const isStrongPassword = (password) => {
-  
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
     return passwordRegex.test(password);
   };
@@ -39,14 +38,21 @@ const Login = () => {
 
     const users = JSON.parse(localStorage.getItem('registeredUsers') || '[]');
     
-   
     const user = users.find(
       u => u.email === email && u.password === password
     );
 
     if (user) {
-    
-      alert('Login berhasil!');
+      
+      localStorage.setItem('isLoggedIn', 'true');
+      
+      
+      localStorage.setItem('currentUser', JSON.stringify(user));
+      
+     
+      alert(`Selamat datang, ${user.firstName}!`);
+      
+     
       navigate('/home');
     } else {
       alert('Email atau password salah. Silakan cek kembali.');
@@ -55,7 +61,6 @@ const Login = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    
     
     if (!firstName || !lastName || !email || !password || !confirmPassword) {
       alert('Harap isi semua kolom');
@@ -77,17 +82,14 @@ const Login = () => {
       return;
     }
 
-    
     const users = JSON.parse(localStorage.getItem('registeredUsers') || '[]');
 
-    
     const existingUser = users.find(u => u.email === email);
     if (existingUser) {
       alert('Email sudah terdaftar. Silakan gunakan email lain.');
       return;
     }
 
-    
     const newUser = {
       firstName,
       lastName,
@@ -98,16 +100,14 @@ const Login = () => {
     users.push(newUser);
     localStorage.setItem('registeredUsers', JSON.stringify(users));
 
-
-    alert('Registrasi berhasil! Silahkan login.');
-    setIsLogin(true);
     
-  
-    setFirstName('');
-    setLastName('');
-    setEmail('');
-    setPassword('');
-    setConfirmPassword('');
+    localStorage.setItem('isLoggedIn', 'true');
+    localStorage.setItem('currentUser', JSON.stringify(newUser));
+
+    alert('Registrasi berhasil! Anda akan dialihkan ke halaman home.');
+    
+   
+    navigate('/home');
   };
 
   const handleGoogleLogin = () => {
@@ -260,4 +260,3 @@ const Login = () => {
 };
 
 export default Login;
-
