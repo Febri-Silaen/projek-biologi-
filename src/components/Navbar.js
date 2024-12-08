@@ -18,7 +18,7 @@ const Navbar = () => {
 
   const navItems = [
     { 
-      path: '/', 
+      path: '/home', 
       label: 'Home',
       icon: '🏠'
     },
