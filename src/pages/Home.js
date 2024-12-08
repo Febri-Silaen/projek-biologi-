@@ -18,7 +18,7 @@ const Home = () => {
       title: 'Virus',
       description: 'Eksplorasi materi mengenai virus virus',
       imageUrl: '/images/virus.background.jpg',
-      link: './virus',
+      link: '/virus',
       color: '#432E54'
     },
     {
