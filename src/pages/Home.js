@@ -1,6 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+import { useNavigate, NavLink } from 'react-router-dom';
 import '../styles/Home.css';
 
 const Home = () => {
@@ -25,39 +24,35 @@ const Home = () => {
       title: 'Plantae',
       description: 'Eksplorasi materi mengenai plantae',
       imageUrl: '/images/plantae.jpg',
-      link: './plantae',
+      link: '/plantae',
       color: '#1F4529'
     },
-    
     {
       title: 'Animalia',
       description: 'Eksplorasi materi mengenai Animalia',
       imageUrl: '/images/animalia.webp',
-      link: './Animalia',
+      link: '/animalia',
       color: '#219B9D'
     },
-
     {
       title: 'Fungi',
-      description: 'jelajahi materi fungsi disini',
+      description: 'Jelajahi materi fungi disini',
       imageUrl: '/images/fungi-bg.jpg',
-      link: './fungi',
+      link: '/fungi',
       color: 'orange'
     },
     {
       title: 'Test Pengetahuan',
-      description: 'Uji sejauh mana kemampuan kamu setelah belajar materi diwebsite ini',
+      description: 'Uji sejauh mana kemampuan kamu setelah belajar materi di website ini',
       imageUrl: '/images/test.png',
-      link: './Quiz',
+      link: '/quiz',
       color: '#78B3CE'
     },
-
-  
-
   ];
 
   return (
     <div className="home-container">
+      {/* Hero Section */}
       <div className="hero-section4">
         <div className="hero-content">
           <h1 className="hero-title">SIBISUK MARBIOLOGI</h1>
@@ -65,15 +60,19 @@ const Home = () => {
           <p className="hero-description">
             Belajar biologi jadi lebih menyenangkan dan interaktif
           </p>
-          <button className="cta-button" onClick={() => navigate('/Keanekaragaman')}>
+          <button 
+            className="cta-button" 
+            onClick={() => navigate('/keanekaragaman')}
+          >
             Mulai Belajar
           </button>
         </div>
         <div className="hero-image">
-       
+          {/* Optional: Add hero image or illustration */}
         </div>
       </div>
 
+      {/* Features Section */}
       <div className="features-section">
         <h2 className="section-title">Mengapa Belajar di Sibisuk?</h2>
         <div className="features-grid">
@@ -90,11 +89,12 @@ const Home = () => {
           <div className="feature-card">
             <span className="feature-icon">🎮</span>
             <h3>Latihan Seru</h3>
-            <p>Kuis  untuk menguji pemahaman</p>
+            <p>Kuis untuk menguji pemahaman</p>
           </div>
         </div>
       </div>
 
+      {/* Materials Section */}
       <div className="materials-section">
         <h2 className="section-title">Materi Pembelajaran</h2>
         <div className="materials-grid">
@@ -103,26 +103,47 @@ const Home = () => {
               key={index}
               className="material-card"
               style={{'--card-color': material.color}}
-              onClick={() => navigate(material.link)}
             >
-              <div className="card-image">
-                <img src={material.imageUrl} alt={material.title} />
+              <div 
+                className="card-image"
+                onClick={() => navigate(material.link)}
+                style={{cursor: 'pointer'}}
+              >
+                <img 
+                  src={material.imageUrl} 
+                  alt={material.title} 
+                />
               </div>
               <div className="card-content">
-                <h3>{material.title}</h3>
-                <p>{material.description}</p>
+                <h3 
+                  onClick={() => navigate(material.link)} 
+                  style={{cursor: 'pointer'}}
+                >
+                  {material.title}
+                </h3>
+                <p 
+                  onClick={() => navigate(material.link)} 
+                  style={{cursor: 'pointer'}}
+                >
+                  {material.description}
+                </p>
               </div>
             </div>
           ))}
         </div>
       </div>
 
+      {/* Call to Action Section */}
       <div className="cta-section">
         <div className="cta-content">
           <div className="cta-text">
             <h2>Siap Memulai Perjalanan Belajarmu?</h2>
-            <p>Bergabunglah dengan ribuan siswa yang sudah merasakan kemudahan belajar biologi</p>
+            <p>
+              Bergabunglah dengan ribuan siswa yang sudah merasakan 
+              kemudahan belajar biologi
+            </p>
           </div>
+
           <div className="cta-features">
             <div className="cta-feature">
               <i className="fas fa-book-open"></i>
@@ -133,6 +154,7 @@ const Home = () => {
               <span>Video Interaktif</span>
             </div>
           </div>
+
           <div className="cta-buttons">
             <button 
               className="primary-btn" 
@@ -141,17 +163,16 @@ const Home = () => {
               Daftar Sekarang
               <i className="fas fa-arrow-right"></i>
             </button>
-          
 
-            <NavLink 
-   to= 'https://youtu.be/8glI_X1XoBE?si=kQj0OoKjDFzyrRPR' 
-  className="secondary-btn"
->
-  Lihat Materi
-  <i className="fas fa-play-circle"></i>
-</NavLink>
-
-
+            <a 
+              href="https://youtu.be/8glI_X1XoBE?si=kQj0OoKjDFzyrRPR" 
+              className="secondary-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Lihat Materi
+              <i className="fas fa-play-circle"></i>
+            </a>
           </div>
         </div>
       </div>
